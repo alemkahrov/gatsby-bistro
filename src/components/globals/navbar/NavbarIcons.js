@@ -42,6 +42,7 @@ export default class NavbarIcons extends Component {
 
 const IconWrapper = styled.div`
   padding: 0 1rem;
+  display: none;
   .icon {
     font-size: 2rem;
     margin-left: 1.5rem;
@@ -57,5 +58,9 @@ const IconWrapper = styled.div`
   }
   .icon-instagram {
     color: #f09faf;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
   }
 `
