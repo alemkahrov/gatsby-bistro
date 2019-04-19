@@ -45,7 +45,7 @@ const IconWrapper = styled.div`
   display: none;
   .icon {
     font-size: 2rem;
-    margin-left: 1.5rem;
+    padding-left: 1.5rem;
     cursor: pointer;
     ${transDefault};
     &:hover {
