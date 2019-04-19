@@ -4,8 +4,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { PageHeader, Banner } from "../utils"
 import img from "../images/bcg/aboutBcg.jpeg"
-import { Title } from "../utils"
-import { Section } from "../utils"
 
 const AboutPage = () => (
   <Layout>
@@ -13,9 +11,6 @@ const AboutPage = () => (
     <PageHeader img={img}>
       <Banner title="about us" subtitle=" a little about us" />
     </PageHeader>
-    <Section>
-      <Title slogan="story about us" title="our mission" />
-    </Section>
   </Layout>
 )
 
