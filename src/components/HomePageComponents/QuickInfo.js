@@ -2,7 +2,6 @@ import React, { Component } from "react"
 import { Link } from "gatsby"
 
 import styled from "styled-components"
-import { styles } from "../../utils"
 
 import { Section, Title, SectionButton } from "../../utils"
 
