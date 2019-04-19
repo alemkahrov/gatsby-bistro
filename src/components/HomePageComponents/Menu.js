@@ -30,7 +30,7 @@ export default function Menu() {
   return (
     <Section>
       <Title title="featured items" message="little taste" />
-      <ProductItem>
+      <ProductList>
         <StaticQuery
           query={PRODUCTS}
           render={data => {
@@ -40,12 +40,12 @@ export default function Menu() {
             })
           }}
         />
-      </ProductItem>
+      </ProductList>
     </Section>
   )
 }
 
-const ProductItem = styled.div`
+const ProductList = styled.div`
   margin: 3rem 0;
   display: grid;
   grid-template-columns: 100%;
@@ -60,5 +60,6 @@ const ProductItem = styled.div`
   }
   @media (min-width: 992px) {
     grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
   }
 `
