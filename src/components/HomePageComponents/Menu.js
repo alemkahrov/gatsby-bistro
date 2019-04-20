@@ -1,60 +1,56 @@
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import { Link } from "gatsby"
-
-import Product from "./Product"
-import styled from "styled-components"
-import { Section, Title, SectionButton } from "../../utils"
-
-const PRODUCTS = graphql`
-  {
-    items: allContentfulMenu {
-      edges {
-        node {
-          name
-          price
-          id
-          ingredients
-          img {
-            fixed(width: 150, height: 150) {
-              ...GatsbyContentfulFixed_tracedSVG
-            }
-          }
-        }
-      }
-    }
-  }
-`
-
+import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
+import { Section, Title, SectionButton } from '../../utils'
+import styled from 'styled-components'
+import Product from './Product'
+import { Link } from 'gatsby'
 export default function Menu() {
   return (
     <Section>
       <Title title="featured items" message="little taste" />
       <ProductList>
         <StaticQuery
-          query={PRODUCTS}
+          query={graphql`
+            {
+              items: allContentfulMenu {
+                edges {
+                  node {
+                    name
+                    price
+                    id
+                    ingredients
+                    img {
+                      fixed(width: 150, height: 150) {
+                        ...GatsbyContentfulFixed_tracedSVG
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          `}
           render={data => {
-            const products = data.items.edges
-            return products.map(item => {
+            const { edges: sweets } = data.items
+            return sweets.map(item => {
               return <Product key={item.node.id} product={item.node} />
             })
           }}
         />
       </ProductList>
-      <Link to="/menu/" style={{ textDecoration: "none" }}>
-        <SectionButton style={{ margin: "4rem auto" }}>menu</SectionButton>
+      <Link to="/menu/" style={{ textDecoration: 'none' }}>
+        <SectionButton style={{ margin: '2rem auto' }}> menu</SectionButton>
       </Link>
     </Section>
   )
 }
 
-const ProductList = styled.div`
+export const ProductList = styled.div`
   margin: 3rem 0;
   display: grid;
   grid-template-columns: 100%;
-  grid-row-gap: 2rem;
-
+  grid-row-gap: 3rem;
   @media (min-width: 576px) {
+    display: grid;
     grid-template-columns: 95%;
   }
   @media (min-width: 776px) {
@@ -63,6 +59,6 @@ const ProductList = styled.div`
   }
   @media (min-width: 992px) {
     grid-template-columns: 1fr 1fr;
-    grid-gap: 3rem;
+    grid-gap: 2rem;
   }
 `

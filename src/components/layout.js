@@ -1,49 +1,30 @@
-/**
- * Layout component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
+import React from 'react'
+import PropTypes from 'prop-types'
+// import styled from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
+import Navbar from '../components/Global/Navbar'
+import Footer from '../components/Global/Footer'
+// import '../styles/sass/layout.scss'
 
-import React from "react"
-import PropTypes from "prop-types"
-import { createGlobalStyle } from "styled-components"
-import Navbar from "../components/globals/navbar"
-import Footer from "../components/globals/Footer"
-
-//import "./layout.css"
-//import "./bootstrap.min.css"
-//import "../sass/main.scss"
-
-const Layout = ({ children }) => {
-  return (
-    <React.Fragment>
-      <GlobalStyle />
-      <Navbar />
-      {children}
-      <Footer />
-    </React.Fragment>
-  )
-}
+const Layout = ({ children }) => (
+  <div>
+    <GlobalStyle />
+    <Navbar />
+    {children}
+    <Footer />
+  </div>
+)
 
 const GlobalStyle = createGlobalStyle`
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-{
-  html{
-    font-size: 62.5%;
-  }
-
-  body{
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.6;
-    color: #222;
-    background-color: #fff;
-  }
+body {
+  font-family: 'Open Sans', sans-serif;
+  color:#262626;
+  background:#fff;
 }
 `
 
