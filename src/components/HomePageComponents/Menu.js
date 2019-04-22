@@ -1,9 +1,9 @@
-import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
-import { Section, Title, SectionButton } from '../../utils'
-import styled from 'styled-components'
-import Product from './Product'
-import { Link } from 'gatsby'
+import React from "react"
+import { StaticQuery, graphql } from "gatsby"
+import { Section, Title, SectionButton } from "../../utils"
+import styled from "styled-components"
+import Product from "./Product"
+import { Link } from "gatsby"
 export default function Menu() {
   return (
     <Section>
@@ -37,8 +37,11 @@ export default function Menu() {
           }}
         />
       </ProductList>
-      <Link to="/menu/" style={{ textDecoration: 'none' }}>
-        <SectionButton style={{ margin: '2rem auto' }}> menu</SectionButton>
+      <Link to="/speisekarte/" style={{ textDecoration: "none" }}>
+        <SectionButton style={{ margin: "2rem auto" }}>
+          {" "}
+          speisekarte
+        </SectionButton>
       </Link>
     </Section>
   )

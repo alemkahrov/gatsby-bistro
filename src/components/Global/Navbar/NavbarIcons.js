@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import { FaInstagram, FaTwitter, FaFacebook } from 'react-icons/fa'
-import styled from 'styled-components'
-import { styles } from '../../../utils'
+import React, { Component } from "react"
+import { FaInstagram, FaFacebook } from "react-icons/fa"
+import styled from "styled-components"
+import { styles } from "../../../utils"
 export default class NavbarIcons extends Component {
   state = {
     icons: [
@@ -12,13 +12,8 @@ export default class NavbarIcons extends Component {
       },
       {
         id: 2,
-        icon: <FaTwitter className="icon twitter-icon" />,
-        path: `https://www.facebook.com`,
-      },
-      {
-        id: 3,
         icon: <FaInstagram className="icon instagram-icon" />,
-        path: `https://www.facebook.com`,
+        path: `https://www.instagram.com`,
       },
     ],
   }
@@ -26,14 +21,16 @@ export default class NavbarIcons extends Component {
     return (
       <IconWrapper>
         {this.state.icons.map(item => (
-          <a
-            href={item.path}
-            key={item.id}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {item.icon}
-          </a>
+          <div className="icon-box">
+            <a
+              href={item.path}
+              key={item.id}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {item.icon}
+            </a>
+          </div>
         ))}
       </IconWrapper>
     )
@@ -41,9 +38,11 @@ export default class NavbarIcons extends Component {
 }
 
 const IconWrapper = styled.div`
+  .icon-box {
+    padding-right: 1.5rem;
+  }
   .icon {
-    // margin-right: 2rem;
-    font-size: 1.3rem;
+    font-size: 2rem;
     cursor: pointer;
     ${styles.transFunction()};
   }
@@ -62,7 +61,6 @@ const IconWrapper = styled.div`
   }
   display: none;
   @media (min-width: 768px) {
-    width: 10rem;
     display: flex;
     justify-content: space-around;
   }

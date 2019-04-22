@@ -1,10 +1,10 @@
-import styled from 'styled-components'
-import { styles } from '../utils'
+import styled from "styled-components"
+import { styles } from "../utils"
 const BannerButton = styled.button`
   display: block;
   color: ${styles.colors.mainWhite};
   background: transparent;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
   text-transform: uppercase;
   font-size: 1.5rem;
   letter-spacing: 0.5rem;
@@ -16,6 +16,11 @@ const BannerButton = styled.button`
     background: ${styles.colors.mainWhite};
     color: ${styles.colors.mainBlack};
     cursor: pointer;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 2rem;
+    padding: 1rem 1.5rem 1rem 2rem;
   }
 `
 
