@@ -56,7 +56,7 @@ export const ProductList = styled.div`
     display: grid;
     grid-template-columns: 95%;
   }
-  @media (min-width: 776px) {
+  @media (min-width: 768px) {
     grid-template-columns: 80%;
     justify-content: center;
   }

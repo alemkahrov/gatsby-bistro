@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import styled from 'styled-components'
-import { styles } from '../../utils'
-import { FaInstagram, FaTwitter, FaFacebook } from 'react-icons/fa'
+import React, { Component } from "react"
+import styled from "styled-components"
+import { styles } from "../../utils"
+import { FaInstagram, FaFacebook } from "react-icons/fa"
 export default class Footer extends Component {
   state = {
     icons: [
@@ -12,13 +12,8 @@ export default class Footer extends Component {
       },
       {
         id: 2,
-        icon: <FaTwitter className="icon twitter-icon" />,
-        path: `https://www.facebook.com`,
-      },
-      {
-        id: 3,
         icon: <FaInstagram className="icon instagram-icon" />,
-        path: `https://www.facebook.com`,
+        path: `https://www.instagram.com`,
       },
     ],
   }
@@ -38,7 +33,9 @@ export default class Footer extends Component {
             </a>
           ))}
         </div>
-        <p className="copyright">copyright &copy; 2018 deluxe properties</p>
+        <p className="copyright">
+          copyright &copy; 2019 Developed by Alem Kahrovic
+        </p>
       </FooterWrapper>
     )
   }
@@ -48,7 +45,7 @@ const FooterWrapper = styled.footer`
   padding: 2rem 0;
   background: ${styles.colors.mainBlack};
   .icons {
-    width: 10rem;
+    width: 5rem;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;

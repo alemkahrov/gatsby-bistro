@@ -27,20 +27,20 @@ export default class QuickInfo extends Component {
 }
 
 const QuickInfoWrapper = styled.div`
-  width: 90%;
+  /* width: 90%; */
   margin: 2rem auto;
   .text {
-    line-height: 2em;
+    line-height: 3rem;
     color: ${styles.colors.mainGrey};
-    word-spacing: 0.2rem;
+    word-spacing: 0.1rem;
     font-size: 1.4rem;
   }
 
   @media (min-width: 768px) {
     width: 70%;
-    .text {
+    /* .text {
       font-size: 1.6rem;
-    }
+    } */
   }
   @media (min-width: 992px) {
     width: 60%;

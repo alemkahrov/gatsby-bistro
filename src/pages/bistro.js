@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { PageHeader, Banner } from "../utils"
 import img from "../images/bcg/aboutBcg.jpeg"
+
 export default function bistro() {
   return (
     <Layout>

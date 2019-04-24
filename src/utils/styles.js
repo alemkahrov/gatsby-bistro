@@ -4,6 +4,7 @@ export const colors = {
   mainYellow: `#d2aa5c`,
   mainYellow2: `#F2AF29`,
   mainGreen: "#156342",
+  mainRed: "#D65540",
   mainGrey: `#474747`,
 }
 export const textSlanted = `font-family:'Caveat', cursive;`

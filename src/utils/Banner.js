@@ -10,10 +10,20 @@ export const Banner = ({ title, subtitle, children }) => {
     </BannerWrapper>
   )
 }
+export const FillBanner = ({ title, subtitle, children }) => {
+  return (
+    <FillBannerWrapper>
+      <h1>{title}</h1>
+      <h3>{subtitle}</h3>
+      {children}
+    </FillBannerWrapper>
+  )
+}
 
 const BannerWrapper = styled.div`
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
   text-align: center;
+  padding: 0 1rem;
   h1 {
     color: ${styles.colors.mainWhite};
     font-size: 2.5rem;
@@ -39,6 +49,12 @@ const BannerWrapper = styled.div`
     h3 {
       font-size: 2rem;
     }
+  }
+`
+
+const FillBannerWrapper = styled(BannerWrapper)`
+  h1 {
+    color: ${styles.colors.mainGreen};
   }
 `
 Banner.defaultProps = {

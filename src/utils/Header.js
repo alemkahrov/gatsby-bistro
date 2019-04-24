@@ -7,6 +7,9 @@ function HomeHeader({ img, children }) {
 function PageHeader({ img, children }) {
   return <DefaultHeader img={img}>{children}</DefaultHeader>
 }
+function FillHeader({ img, children }) {
+  return <CtaHeader img={img}>{children}</CtaHeader>
+}
 
 const IndexHeader = styled.header`
   min-height: calc(100vh - 68px);
@@ -17,7 +20,11 @@ const IndexHeader = styled.header`
   align-items: center;
 `
 const DefaultHeader = styled(IndexHeader)`
-  min-height: 55vh;
+  min-height: 60vh;
+`
+
+const CtaHeader = styled(IndexHeader)`
+  min-height: 70vh;
 `
 
 HomeHeader.defaultProps = {
@@ -26,5 +33,8 @@ HomeHeader.defaultProps = {
 PageHeader.defaultProps = {
   img: img,
 }
+FillHeader.defaultProps = {
+  img: img,
+}
 
-export { HomeHeader, PageHeader }
+export { HomeHeader, PageHeader, FillHeader }

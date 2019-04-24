@@ -17,8 +17,8 @@ export default class NavbarLinks extends Component {
       },
       {
         id: 2,
-        path: "/speisekarte/",
-        name: "speisekarte",
+        path: "/menü/",
+        name: "menükarte",
       },
       {
         id: 3,
@@ -51,17 +51,17 @@ const LinkWrapper = styled.ul`
   .nav-link {
     display: block;
     text-decoration: none;
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    font-size: 1.5rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    font-size: 1.6rem;
     font-weight: 700;
     text-transform: capitalize;
     cursor: pointer;
     color: ${styles.colors.mainGrey};
     ${styles.transDefault};
     &:hover {
-      background: ${styles.colors.mainGrey};
-      color: ${styles.colors.mainYellow};
-      padding: 0.5rem 1rem 0.5rem 1.3rem;
+      background: ${styles.colors.mainGreen};
+      color: ${styles.colors.mainWhite};
+      padding: 1rem 1.5rem 1rem 1.5rem;
     }
   }
   //
@@ -76,12 +76,16 @@ const LinkWrapper = styled.ul`
     //
     display: flex;
     margin: 0 auto;
-    .nav-item: {
-      padding: 0 2rem;
-    }
-    .nav-link:hover {
-      background: ${styles.colors.mainWhite};
-      padding: 0.5rem 1rem 0.5rem 1rem;
+
+    .nav-link {
+      /* border-bottom: 2px solid ${styles.colors.mainWhite}; */
+      &:hover,
+      &:focus {
+        background: ${styles.colors.mainWhite};
+        padding: 1rem 1.5rem 1rem 1.5rem;
+        /* border-color: ${styles.colors.mainRed}; */
+        color: ${styles.colors.mainRed};
+      }
     }
   }
 `
