@@ -63,14 +63,14 @@ export default function Gallery() {
                 </div>
               </div>
               <div className="text-wrapper">
-                <Title message="entdecke unsere" title="Menükarte" />
+                <Title message="entdecke unser" title="wochenmenü" />
                 <p className="text">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
                   blanditiis dolorum quae doloremque molestias expedita, eum
                   voluptas distinctio! Molestiae fuga temporibus nemo non vel
                   mollitia nesciunt quaerat facere voluptate earum.
                 </p>
-                <Link to="/speisekarte/" style={{ textDecoration: "none" }}>
+                <Link to="/menu/" style={{ textDecoration: "none" }}>
                   <SectionButton style={{ margin: "2rem auto" }}>
                     Menükarte
                   </SectionButton>

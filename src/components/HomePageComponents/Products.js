@@ -4,7 +4,7 @@ import { Section, Title, SectionButton } from "../../utils"
 import styled from "styled-components"
 import Product from "./Product"
 import { Link } from "gatsby"
-export default function Menu() {
+export default function Products() {
   return (
     <Section>
       <Title title="featured items" message="little taste" />
@@ -37,11 +37,8 @@ export default function Menu() {
           }}
         />
       </ProductList>
-      <Link to="/speisekarte/" style={{ textDecoration: "none" }}>
-        <SectionButton style={{ margin: "2rem auto" }}>
-          {" "}
-          speisekarte
-        </SectionButton>
+      <Link to="/products/" style={{ textDecoration: "none" }}>
+        <SectionButton style={{ margin: "2rem auto" }}> produkte</SectionButton>
       </Link>
     </Section>
   )

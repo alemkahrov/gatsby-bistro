@@ -6,7 +6,7 @@ import img from "../images/bcg/contactBcg.jpeg"
 export default function contact() {
   return (
     <Layout>
-      <SEO title="Contact" />
+      <SEO title="Kontakt" />
       <PageHeader img={img}>
         <Banner title="contact us" subtitle="let's get in touch" />
       </PageHeader>

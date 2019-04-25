@@ -17,12 +17,17 @@ export default class NavbarLinks extends Component {
       },
       {
         id: 2,
-        path: "/menü/",
+        path: "/menu/",
         name: "menükarte",
       },
       {
         id: 3,
-        path: "/kontakt/",
+        path: "/products/",
+        name: "unsere produkte",
+      },
+      {
+        id: 4,
+        path: "/contact/",
         name: "kontakt",
       },
     ],
@@ -53,10 +58,10 @@ const LinkWrapper = styled.ul`
     text-decoration: none;
     padding: 1rem 1.5rem 1rem 1.5rem;
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 400;
     text-transform: capitalize;
     cursor: pointer;
-    color: ${styles.colors.mainGrey};
+    color: ${styles.colors.mainGreen};
     ${styles.transDefault};
     &:hover {
       background: ${styles.colors.mainGreen};
@@ -65,7 +70,7 @@ const LinkWrapper = styled.ul`
     }
   }
   //
-  height: ${props => (props.open ? "152px" : "0px")};
+  height: ${props => (props.open ? "185px" : "0px")};
   overflow: hidden;
   ${styles.transObject({ time: "1s" })};
   //
@@ -78,6 +83,7 @@ const LinkWrapper = styled.ul`
     margin: 0 auto;
 
     .nav-link {
+      cursor:pointer;
       /* border-bottom: 2px solid ${styles.colors.mainWhite}; */
       &:hover,
       &:focus {
