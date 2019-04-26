@@ -27,7 +27,9 @@ const IndexPage = () => (
         subtitle="fuhrmannsgasse 1 - 1080 wien"
       >
         <Link to="/menu/" style={{ textDecoration: "none" }}>
-          <BannerButton style={{ margin: "4rem auto" }}>Menükarte</BannerButton>
+          <BannerButton style={{ margin: "4rem auto" }}>
+            Speisekarte
+          </BannerButton>
         </Link>
       </Banner>
     </HomeHeader>

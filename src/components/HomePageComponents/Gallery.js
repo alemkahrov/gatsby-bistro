@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import { StaticQuery, graphql } from "gatsby"
 import { styles, Section, Title, SectionButton } from "../../utils"
 import Img from "gatsby-image"
-import TwoColSection from "./TwoColSection"
+
 export default function Gallery() {
   return (
     <StaticQuery

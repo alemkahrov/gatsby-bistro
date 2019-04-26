@@ -1,11 +1,11 @@
-require('dotenv').config({
+require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 module.exports = {
   siteMetadata: {
-    title: `Bob's Eatery`,
+    title: `L'angolo di Michel Bistro`,
     description: `restaurant site made with gatsby.`,
-    author: `john`,
+    author: `alem`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
