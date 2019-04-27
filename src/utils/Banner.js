@@ -56,6 +56,9 @@ const FillBannerWrapper = styled(BannerWrapper)`
   h1 {
     color: ${styles.colors.mainGreen};
   }
+  h3 {
+    color: ${styles.colors.mainGrey};
+  }
 `
 Banner.defaultProps = {
   title: "default title",

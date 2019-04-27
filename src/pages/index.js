@@ -40,14 +40,13 @@ const IndexPage = () => (
     <FillHeader img={fillImg}>
       <Banner title="delizioso" subtitle="täglich frische Gerichte" />
     </FillHeader>
-    <Gallery />
     <FillHeader img={fillImg1}>
       <Banner
         title="italien daheim erleben"
         subtitle="original italienische spezialitäten zum mitnehmen "
       />
     </FillHeader>
-    <Products />
+    <Gallery />
   </Layout>
 )
 

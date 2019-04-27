@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { PageHeader, Banner, IntroText, Section } from "../utils"
 import img from "../images/bcg/menuBcg.jpeg"
+import Speisekarte from "../components/MenuPageComponents/Speisekarte"
 const MenuPage = () => (
   <Layout>
     <SEO title="Menükarte - Wochenmenü, Italienische Spezialitäten, Wien 1080, Österreich, Restaurant, Bistro" />
@@ -18,6 +19,7 @@ const MenuPage = () => (
         text="verspricht frische und qualitative Produkte. Das „Eck“ im 8ten mit Charme und Liebe für Italienische Spezialitäten."
       />
     </Section>
+    <Speisekarte />
   </Layout>
 )
 
