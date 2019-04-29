@@ -4,6 +4,7 @@ import PropTypes from "prop-types"
 import { createGlobalStyle } from "styled-components"
 import Navbar from "../components/Global/Navbar"
 import Footer from "../components/Global/Footer"
+import "./bootstrap.min.css"
 // import '../styles/sass/layout.scss'
 
 const Layout = ({ children }) => (

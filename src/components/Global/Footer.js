@@ -20,7 +20,7 @@ export default class Footer extends Component {
   render() {
     return (
       <FooterWrapper>
-        <div className="title">eatery</div>
+        <div className="title">l'angolo di michel</div>
         <div className="icons">
           {this.state.icons.map(item => (
             <a

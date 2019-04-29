@@ -8,7 +8,10 @@ export default function contact() {
     <Layout>
       <SEO title="Kontakt" />
       <PageHeader img={img}>
-        <Banner title="contact us" subtitle="let's get in touch" />
+        <Banner
+          title="haben wir ihr interesse geweckt?"
+          subtitle="schreiben sie uns einfach"
+        />
       </PageHeader>
     </Layout>
   )

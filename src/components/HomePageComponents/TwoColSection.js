@@ -31,10 +31,9 @@ export default function TwoColSection() {
               <div className="text-wrapper">
                 <Title message="wir lieben italien" title="unsere mission" />
                 <p className="text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
-                  blanditiis dolorum quae doloremque molestias expedita, eum
-                  voluptas distinctio! Unde blanditiis dolorum quae doloremque
-                  molestias expedita, eum voluptas distinctio!
+                  Wir versprechen frische und qualitative Produkte. Das „Eck“ im
+                  8ten mit Charme Liebe und Leidenschaft für Italienische
+                  Spezialitäten.
                 </p>
                 <Link to="/bistro/" style={{ textDecoration: "none" }}>
                   <SectionButton style={{ margin: "2rem auto" }}>

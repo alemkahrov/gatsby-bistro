@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -15,14 +15,14 @@ import img from "../images/bcg/homeBcg.jpeg"
 import fillImg from "../images/homeGallery/cta-img-1.jpg"
 import fillImg1 from "../images/homeGallery/cta-img-2.jpg"
 import Gallery from "../components/HomePageComponents/Gallery"
-import Products from "../components/HomePageComponents/Products"
 import TwoColSection from "../components/HomePageComponents/TwoColSection"
-const IndexPage = () => (
+import Speisekarte from "../components/HomePageComponents/Speisekarte"
+const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <HomeHeader img={img}>
       <Banner
-        title="benvenuto a  
+        title="  
          l'angolo di michel"
         subtitle="fuhrmannsgasse 1 - 1080 wien"
       >
@@ -40,14 +40,38 @@ const IndexPage = () => (
     <FillHeader img={fillImg}>
       <Banner title="delizioso" subtitle="täglich frische Gerichte" />
     </FillHeader>
+    <Gallery />
+    <Speisekarte items={data.speisekarte} />
     <FillHeader img={fillImg1}>
       <Banner
         title="italien daheim erleben"
         subtitle="original italienische spezialitäten zum mitnehmen "
       />
     </FillHeader>
-    <Gallery />
   </Layout>
 )
+
+export const query = graphql`
+  {
+    speisekarte: allContentfulSpeisekarte {
+      edges {
+        node {
+          id
+          title
+          description {
+            description
+          }
+          price
+          category
+          image {
+            fixed(width: 50, height: 50) {
+              ...GatsbyContentfulFixed_tracedSVG
+            }
+          }
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage

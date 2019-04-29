@@ -56,8 +56,8 @@ const LinkWrapper = styled.ul`
   .nav-link {
     display: block;
     text-decoration: none;
-    padding: 1rem 1.5rem 1rem 1.5rem;
-    font-size: 1.6rem;
+    padding: 1rem 1rem 1rem 1rem;
+    font-size: 1.4rem;
     font-weight: 400;
     text-transform: capitalize;
     cursor: pointer;
@@ -70,7 +70,7 @@ const LinkWrapper = styled.ul`
     }
   }
   //
-  height: ${props => (props.open ? "185px" : "0px")};
+  height: ${props => (props.open ? "205px" : "0px")};
   overflow: hidden;
   ${styles.transObject({ time: "1s" })};
   //
@@ -88,7 +88,7 @@ const LinkWrapper = styled.ul`
       &:hover,
       &:focus {
         background: ${styles.colors.mainWhite};
-        padding: 1rem 1.5rem 1rem 1.5rem;
+        padding: 1rem 1rem 1rem 1rem;
         /* border-color: ${styles.colors.mainRed}; */
         color: ${styles.colors.mainRed};
       }

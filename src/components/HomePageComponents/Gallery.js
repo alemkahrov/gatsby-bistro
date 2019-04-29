@@ -63,16 +63,17 @@ export default function Gallery() {
                 </div>
               </div>
               <div className="text-wrapper">
-                <Title message="entdecke unser" title="sortiment" />
+                <Title
+                  message="entdecke unser"
+                  title="leidenschaft & phantasie"
+                />
                 <p className="text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
-                  blanditiis dolorum quae doloremque molestias expedita, eum
-                  voluptas distinctio! Molestiae fuga temporibus nemo non vel
-                  mollitia nesciunt quaerat facere voluptate earum.
+                  Bei uns bekommen Sie ausschließlich frische hausgemachte
+                  original Italienische Spezialitäten.
                 </p>
-                <Link to="/products/" style={{ textDecoration: "none" }}>
+                <Link to="/menu/" style={{ textDecoration: "none" }}>
                   <SectionButton style={{ margin: "2rem auto" }}>
-                    Produkte
+                    Speisekarte
                   </SectionButton>
                 </Link>
               </div>
