@@ -29,7 +29,7 @@ export default class Speisekarte extends Component {
                       <h5 className="price">€ {node.price.toFixed(2)}</h5>
                     </div>
                     <p className="text-muted">
-                      {/* <small>{node.description.description}</small> */}
+                      <small>{node.info.info}</small>
                     </p>
                   </div>
                 </div>

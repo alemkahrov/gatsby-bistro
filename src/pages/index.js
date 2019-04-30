@@ -58,8 +58,8 @@ export const query = graphql`
         node {
           id
           title
-          description {
-            description
+          info {
+            info
           }
           price
           category
