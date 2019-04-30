@@ -7,7 +7,6 @@ import {
   HomeHeader,
   Banner,
   BannerButton,
-  FillHeader,
   SectionCenter,
   Title,
   PageHeader,

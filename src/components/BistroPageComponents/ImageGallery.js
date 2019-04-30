@@ -31,7 +31,7 @@ export default function ImageGallery() {
             {images.map(({ node }, index) => {
               return (
                 <figure key={index} className={`item item-${index + 1}`}>
-                  <Img fluid={node.childImageSharp.fluid} className="img" />
+                  <Img fluid={node.childImageSharp.fluid} />
                 </figure>
               )
             })}
@@ -53,8 +53,7 @@ const ImageGalleryWrapper = styled.div`
   .figure {
     margin: 0 0 0 0;
   }
-  .img {
-  }
+ 
   .item-1 {
     grid-column: 1 / 3;
     grid-row: 1 / 3;
