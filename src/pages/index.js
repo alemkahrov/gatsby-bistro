@@ -10,6 +10,7 @@ import {
   FillHeader,
   SectionCenter,
   Title,
+  PageHeader,
 } from "../utils"
 import img from "../images/bcg/homeBcg.jpeg"
 import fillImg from "../images/homeGallery/cta-img-1.jpg"
@@ -37,17 +38,17 @@ const IndexPage = ({ data }) => (
       <Title message="aktuell" title="unser wochenmenü" />
     </SectionCenter>
     <TwoColSection />
-    <FillHeader img={fillImg}>
+    <PageHeader img={fillImg}>
       <Banner title="delizioso" subtitle="täglich frische Gerichte" />
-    </FillHeader>
+    </PageHeader>
     <Gallery />
     <Speisekarte items={data.speisekarte} />
-    <FillHeader img={fillImg1}>
+    <PageHeader img={fillImg1}>
       <Banner
         title="italien daheim erleben"
         subtitle="original italienische spezialitäten zum mitnehmen "
       />
-    </FillHeader>
+    </PageHeader>
   </Layout>
 )
 

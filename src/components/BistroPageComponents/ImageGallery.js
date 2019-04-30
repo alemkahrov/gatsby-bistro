@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
 import { StaticQuery, graphql } from "gatsby"
 import { styles, Section, Title } from "../../utils"
 import Img from "gatsby-image"
@@ -48,29 +47,14 @@ const ImageGalleryWrapper = styled.div`
   display: grid;
   /* grid-template-columns: auto; */
   grid-template: repeat(5, 9vw) / repeat(8, 1fr);
-  grid-gap: 1rem;
-  padding: 1rem;
-  .text {
-    line-height: 3rem;
-    color: ${styles.colors.mainGrey};
-    word-spacing: 0.1rem;
-    font-size: 1.4rem;
-    text-align: center;
-  }
+  grid-column-gap: 1rem;
+  padding: 1.5rem;
+
   .figure {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+    margin: 0 0 0 0;
   }
   .img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
   }
-
   .item-1 {
     grid-column: 1 / 3;
     grid-row: 1 / 3;
@@ -110,5 +94,11 @@ const ImageGalleryWrapper = styled.div`
   .item-10 {
     grid-column: 7 / -1;
     grid-row: 4 / span 2;
+  }
+  .gatsby-image-wrapper {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
 `
