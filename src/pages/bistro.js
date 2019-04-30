@@ -3,6 +3,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { PageHeader, Banner } from "../utils"
 import img from "../images/bcg/aboutBcg.jpeg"
+import MainText from "../components/BistroPageComponents/MainText"
+import ImageGallery from "../components/BistroPageComponents/ImageGallery"
 
 export default function bistro() {
   return (
@@ -11,6 +13,8 @@ export default function bistro() {
       <PageHeader img={img}>
         <Banner title="bistro - l'angolo di michel" subtitle="unsere mission" />
       </PageHeader>
+      <MainText />
+      <ImageGallery />
     </Layout>
   )
 }

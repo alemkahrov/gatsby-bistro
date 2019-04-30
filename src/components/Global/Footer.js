@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import styled from "styled-components"
-import { styles } from "../../utils"
+import { styles, IntroText } from "../../utils"
 import { FaInstagram, FaFacebook } from "react-icons/fa"
 export default class Footer extends Component {
   state = {
@@ -21,6 +21,11 @@ export default class Footer extends Component {
     return (
       <FooterWrapper>
         <div className="title">l'angolo di michel</div>
+        <h5 className="location">
+          Fuhrmannsgasse 1 - 1080 Wien <br />
+          Tel.: +43676/46 144 18 <br />
+          E-mail: langolodimichel@hotmail.com
+        </h5>
         <div className="icons">
           {this.state.icons.map(item => (
             <a
@@ -42,21 +47,27 @@ export default class Footer extends Component {
 }
 
 const FooterWrapper = styled.footer`
-  padding: 2rem 0;
+  padding: 3rem 0 5rem 0;
   background: ${styles.colors.mainBlack};
   .icons {
     width: 5rem;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 1rem auto;
   }
   .icon {
     color: ${styles.colors.mainWhite};
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     ${styles.transition({})};
     &:hover {
-      color: ${styles.colors.mainPrimary};
+      color: ${styles.colors.mainRed};
     }
+  }
+  .location {
+    color: ${styles.colors.mainWhite};
+    line-height: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
   }
   .copyright {
     color: ${styles.colors.mainWhite};
