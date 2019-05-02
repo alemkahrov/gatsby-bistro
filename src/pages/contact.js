@@ -3,7 +3,9 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { PageHeader, Banner } from "../utils"
 import img from "../images/bcg/contactBcg.jpeg"
-export default function contact() {
+import Contact from "../components/ContactPageComponents/Contact"
+
+const ContactPage = () => {
   return (
     <Layout>
       <SEO title="Kontakt" />
@@ -13,6 +15,9 @@ export default function contact() {
           subtitle="schreiben sie uns einfach"
         />
       </PageHeader>
+      <Contact />
     </Layout>
   )
 }
+
+export default ContactPage
