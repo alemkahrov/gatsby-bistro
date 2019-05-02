@@ -17,6 +17,8 @@ import fillImg1 from "../images/homeGallery/cta-img-2.jpg"
 import Gallery from "../components/HomePageComponents/Gallery"
 import TwoColSection from "../components/HomePageComponents/TwoColSection"
 import Speisekarte from "../components/HomePageComponents/Speisekarte"
+import WochenMenü from "../components/HomePageComponents/WochenMenü"
+
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
@@ -33,9 +35,7 @@ const IndexPage = ({ data }) => (
         </Link>
       </Banner>
     </HomeHeader>
-    <SectionCenter>
-      <Title message="aktuell" title="unser wochenmenü" />
-    </SectionCenter>
+    <WochenMenü />
     <TwoColSection />
     <PageHeader img={fillImg}>
       <Banner title="delizioso" subtitle="täglich frische Gerichte" />
