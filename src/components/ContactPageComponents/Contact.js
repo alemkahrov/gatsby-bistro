@@ -59,14 +59,15 @@ export default function Contact() {
 }
 
 const FormWrapper = styled.div`
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: ${styles.colors.mainGrey};
   background: ${styles.colors.mainLightGrey};
   .btn {
-    font-size: 1.5rem;
-    ${styles.border({ color: `${styles.colors.mainGrey}` })};
+    font-size: 1.8rem;
+    color: ${styles.colors.mainGreen};
+    ${styles.border({ color: `${styles.colors.mainGreen}` })};
     width: 100%;
-    :hover {
+    &:hover {
       background: ${styles.colors.mainGreen};
       color: ${styles.colors.mainWhite};
     }

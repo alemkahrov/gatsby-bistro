@@ -17,7 +17,7 @@ const DATE = graphql`
     }
   }
 `
-const ITEMS = graphql`
+/* const ITEMS = graphql`
   {
     items: allContentfulWochenmenu {
       edges {
@@ -32,7 +32,7 @@ const ITEMS = graphql`
       }
     }
   }
-`
+` */
 
 export default function WochenMenü() {
   return (
@@ -49,7 +49,7 @@ export default function WochenMenü() {
           }}
         />
       </SectionCenter>
-      <SectionCenter>
+      {/* <SectionCenter>
         <StaticQuery
           query={ITEMS}
           render={data => {
@@ -59,7 +59,7 @@ export default function WochenMenü() {
             })
           }}
         />
-      </SectionCenter>
+      </SectionCenter> */}
     </ItemCard>
   )
 }

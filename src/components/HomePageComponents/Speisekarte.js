@@ -23,13 +23,13 @@ export default class Speisekarte extends Component {
               return (
                 <div key={node.id} className="col-11 col-md-6 my-3 d-flex">
                   <Img fixed={node.image.fixed} />
-                  <div className="flex-grow-1">
-                    <div className="d-flex justify-content-between ml-3">
+                  <div className="flex-grow-1 ml-3">
+                    <div className="d-flex justify-content-between">
                       <h5 className="title">{node.title}</h5>
                       <h5 className="price">€ {node.price.toFixed(2)}</h5>
                     </div>
                     <p className="text-muted">
-                      {/* <small>{node.info.info}</small> */}
+                      {<small>{node.info && node.info.info}</small>}
                     </p>
                   </div>
                 </div>

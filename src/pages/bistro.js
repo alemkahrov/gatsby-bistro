@@ -6,7 +6,7 @@ import img from "../images/bcg/aboutBcg.jpeg"
 import MainText from "../components/BistroPageComponents/MainText"
 import ImageGallery from "../components/BistroPageComponents/ImageGallery"
 
-export default function bistro() {
+const BistroPage = () => {
   return (
     <Layout>
       <SEO title="Italienisches Bistro - L'angolo di michel" />
@@ -18,3 +18,5 @@ export default function bistro() {
     </Layout>
   )
 }
+
+export default BistroPage

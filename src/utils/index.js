@@ -5,6 +5,7 @@ import { BannerButton, SectionButton } from "./Button"
 import { Section, SectionCenter } from "./Section"
 import { Title } from "./Title"
 import { IntroText } from "./IntroText"
+
 export {
   styles,
   HomeHeader,
