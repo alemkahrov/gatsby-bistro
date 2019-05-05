@@ -2,7 +2,7 @@ import * as styles from "./styles"
 import { HomeHeader, PageHeader, FillHeader } from "./Header"
 import { Banner, FillBanner } from "./Banner"
 import { BannerButton, SectionButton } from "./Button"
-import { Section, SectionCenter } from "./Section"
+import { Section, SectionColor } from "./Section"
 import { Title } from "./Title"
 import { IntroText } from "./IntroText"
 
@@ -16,7 +16,7 @@ export {
   Title,
   SectionButton,
   FillHeader,
-  SectionCenter,
+  SectionColor,
   IntroText,
   FillBanner,
 }

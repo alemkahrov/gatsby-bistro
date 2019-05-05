@@ -3,17 +3,10 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import {
-  HomeHeader,
-  Banner,
-  BannerButton,
-  SectionCenter,
-  Title,
-  PageHeader,
-} from "../utils"
+import { HomeHeader, Banner, BannerButton, PageHeader } from "../utils"
 import img from "../images/bcg/homeBcg.jpeg"
-import fillImg from "../images/homeGallery/cta-img-1.jpg"
-import fillImg1 from "../images/homeGallery/cta-img-2.jpg"
+import fillImg from "../images/homeGallery/fill-img-1.jpg"
+import fillImg1 from "../images/homeGallery/fill-img-2.jpg"
 import Gallery from "../components/HomePageComponents/Gallery"
 import TwoColSection from "../components/HomePageComponents/TwoColSection"
 import Speisekarte from "../components/HomePageComponents/Speisekarte"
@@ -35,13 +28,13 @@ const IndexPage = ({ data }) => (
         </Link>
       </Banner>
     </HomeHeader>
-    <WochenMenü />
+
     <TwoColSection />
     <PageHeader img={fillImg}>
       <Banner title="delizioso" subtitle="täglich frische Gerichte" />
     </PageHeader>
     <Gallery />
-    <Speisekarte items={data.speisekarte} />
+    {/* <Speisekarte items={data.speisekarte} /> */}
     <PageHeader img={fillImg1}>
       <Banner
         title="italien daheim erleben"

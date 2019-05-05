@@ -61,7 +61,7 @@ export default function Contact() {
 const FormWrapper = styled.div`
   font-size: 1.6rem;
   color: ${styles.colors.mainGrey};
-  background: ${styles.colors.mainLightGrey};
+  background: ${styles.colors.mainLightGrey2};
   .btn {
     font-size: 1.8rem;
     color: ${styles.colors.mainGreen};

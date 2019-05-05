@@ -18,7 +18,7 @@ const IntroTextWrapper = styled.div`
   width: 90%;
   margin: auto;
   h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 700;
     text-transform: uppercase;
     margin-right: -0.3rem;
@@ -33,7 +33,7 @@ const IntroTextWrapper = styled.div`
     margin: 1rem auto;
   }
   p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: ${styles.colors.mainGrey};
     margin-top: 2rem;
     line-height: 3rem;
@@ -47,7 +47,7 @@ const IntroTextWrapper = styled.div`
       font-size: 2.5rem;
     }
     p {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
     }
   }
   @media (min-width: 992px) {

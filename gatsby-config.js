@@ -4,7 +4,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `L'angolo di Michel Bistro`,
-    description: `restaurant site made with gatsby.`,
+    description: `Italienisches Bistro in 1080 Wien.`,
     author: `alem`,
   },
   plugins: [
