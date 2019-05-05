@@ -9,8 +9,6 @@ import fillImg from "../images/homeGallery/fill-img-1.jpg"
 import fillImg1 from "../images/homeGallery/fill-img-2.jpg"
 import Gallery from "../components/HomePageComponents/Gallery"
 import TwoColSection from "../components/HomePageComponents/TwoColSection"
-import Speisekarte from "../components/HomePageComponents/Speisekarte"
-import WochenMenü from "../components/HomePageComponents/WochenMenü"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -44,7 +42,7 @@ const IndexPage = ({ data }) => (
   </Layout>
 )
 
-export const query = graphql`
+/* export const query = graphql`
   {
     speisekarte: allContentfulSpeisekarte {
       edges {
@@ -65,6 +63,6 @@ export const query = graphql`
       }
     }
   }
-`
+` */
 
 export default IndexPage
