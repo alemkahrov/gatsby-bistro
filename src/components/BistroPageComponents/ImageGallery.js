@@ -43,7 +43,7 @@ export default function ImageGallery() {
 }
 
 const ImageGalleryWrapper = styled.div`
-  background: ${styles.colors.mainLightGrey};
+  background: ${styles.colors.mainLightGrey2};
   display: grid;
   /* grid-template-columns: auto; */
   grid-template: repeat(5, 9vw) / repeat(9, 1fr);

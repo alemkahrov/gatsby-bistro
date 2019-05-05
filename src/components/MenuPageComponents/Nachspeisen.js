@@ -49,10 +49,6 @@ export const ProductList = styled.div`
   grid-row-gap: 3rem;
   grid-column-gap: 2rem;
 
-  @media (min-width: 576px) {
-    display: grid;
-    grid-template-columns: 95%;
-  }
   @media (min-width: 776px) {
     /* width: 90vw;
            margin: auto; */

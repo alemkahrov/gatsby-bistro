@@ -19,9 +19,9 @@ export default function Product({ products }) {
 }
 
 export const ProductWrapper = styled.div`
-display:flex;
-justify-content: space-between;
-position: relative;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 
   /* @media (min-width: 768px) {
     display: grid;
@@ -29,35 +29,40 @@ position: relative;
     grid-column-gap: 1rem; 
     
   }  */
-  
+
   .title {
     margin: 0;
+    font-size: 1.6rem;
+
+    @media (min-width: 768px) {
+      font-size: 1.8rem;
     }
   }
+
   .price {
     color: ${styles.colors.mainGreen};
     margin: 0;
     font-weight: 700;
+    font-size: 1.6rem;
   }
 
   .dotted {
     width: 100%;
     height: 2px;
     border-bottom: dotted 2px ${styles.colors.mainGrey};
-    opacity: .7;
+    opacity: 0.7;
     position: absolute;
     top: 17px;
     z-index: 1;
     margin-top: 0.8rem;
     margin-bottom: 1.2rem;
-    
-  } 
+  }
   .info {
     font-size: 1.2rem;
     margin-top: 1.5rem;
     word-spacing: 0.2rem;
     text-transform: capitalize;
-    opacity:0.8;
+    opacity: 0.8;
     font-weight: 200;
   }
   /* @media (min-width: 650px) {

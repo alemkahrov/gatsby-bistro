@@ -8,7 +8,7 @@ import { PageHeader, Banner } from "../utils"
 import Vorspeisen from "../components/MenuPageComponents/Vorspeisen"
 import Salate from "../components/MenuPageComponents/Salate"
 import Nachspeisen from "../components/MenuPageComponents/Nachspeisen"
-import Frühstück from "../components/MenuPageComponents/Frühstück"
+import Breakfast from "../components/MenuPageComponents/Breakfast"
 
 const MenuPage = () => (
   <Layout>
@@ -19,7 +19,7 @@ const MenuPage = () => (
         subtitle="italienische speziallitäten täglich frisch bei uns"
       />
     </PageHeader>
-    <Frühstück />
+    <Breakfast />
     <Vorspeisen />
     <Salate />
     <Nachspeisen />

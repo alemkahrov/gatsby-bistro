@@ -50,10 +50,6 @@ export const ProductList = styled.div`
   grid-template-columns: 100%;
   grid-row-gap: 3rem;
 
-  /* @media (min-width: 576px) {
-    display: grid;
-    grid-template-columns: 95%;
-  } */
   @media (min-width: 768px) {
     /* width: 90vw;
            margin: auto; */
