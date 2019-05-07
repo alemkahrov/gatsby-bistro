@@ -1,9 +1,9 @@
 import React from "react"
 
 import styled from "styled-components"
-import { styles } from "../../utils"
+import { styles } from "../../../utils"
 
-export default function WochenDate({ dateItem }) {
+export default function Date({ dateItem }) {
   const { title } = dateItem
   return (
     <WochenDateWrapper>
@@ -14,6 +14,6 @@ export default function WochenDate({ dateItem }) {
 
 const WochenDateWrapper = styled.div`
   font-size: 1.8rem;
-  text-align: center;
   font-style: italic;
+  color: ${styles.colors.mainGreen};
 `

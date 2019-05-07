@@ -58,7 +58,7 @@ export const ProductWrapper = styled.div`
     margin-bottom: 1.2rem;
   }
   .info {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-top: 1.5rem;
     word-spacing: 0.2rem;
     text-transform: capitalize;

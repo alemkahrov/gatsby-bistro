@@ -9,8 +9,8 @@ import fillImg from "../images/homeGallery/fill-img-1.jpg"
 import fillImg1 from "../images/homeGallery/fill-img-2.jpg"
 import Gallery from "../components/HomePageComponents/Gallery"
 import TwoColSection from "../components/HomePageComponents/TwoColSection"
-import Products from "../components/HomePageComponents/SectionProduct/Products"
 import Catering from "../components/HomePageComponents/Catering"
+import Menu from "../components/HomePageComponents/SectionMenuCard/Menu"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -28,7 +28,7 @@ const IndexPage = ({ data }) => (
         </Link>
       </Banner>
     </HomeHeader>
-
+    <Menu />
     <TwoColSection />
     <PageHeader img={fillImg}>
       <Banner title="delizioso" subtitle="täglich frische Gerichte" />

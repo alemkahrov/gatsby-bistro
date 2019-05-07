@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import styled from "styled-components"
 import { styles, IntroText } from "../../utils"
 import { FaInstagram, FaFacebook } from "react-icons/fa"
+import logo from "../../images/bistro_logo_dunkel.svg"
 export default class Footer extends Component {
   state = {
     icons: [
@@ -20,7 +21,7 @@ export default class Footer extends Component {
   render() {
     return (
       <FooterWrapper>
-        <div className="title">l'angolo di michel</div>
+        <img src={logo} className="logo" alt="company logo" />
         <h5 className="location">
           Fuhrmannsgasse 1 - 1080 Wien <br />
           Tel.: +43676/46 144 18 <br />
@@ -49,6 +50,11 @@ export default class Footer extends Component {
 const FooterWrapper = styled.footer`
   padding: 3rem 0 5rem 0;
   background: ${styles.colors.mainBlack};
+  text-align: center;
+  .logo {
+    height: 8rem;
+    margin-bottom: 2rem;
+  }
   .icons {
     width: 5rem;
     display: flex;
