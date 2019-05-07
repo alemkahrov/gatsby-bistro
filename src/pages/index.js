@@ -9,6 +9,8 @@ import fillImg from "../images/homeGallery/fill-img-1.jpg"
 import fillImg1 from "../images/homeGallery/fill-img-2.jpg"
 import Gallery from "../components/HomePageComponents/Gallery"
 import TwoColSection from "../components/HomePageComponents/TwoColSection"
+import Products from "../components/HomePageComponents/SectionProduct/Products"
+import Catering from "../components/HomePageComponents/Catering"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -39,6 +41,7 @@ const IndexPage = ({ data }) => (
         subtitle="original italienische spezialitäten zum mitnehmen "
       />
     </PageHeader>
+    <Catering />
   </Layout>
 )
 

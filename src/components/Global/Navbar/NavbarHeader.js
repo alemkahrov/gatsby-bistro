@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import logo from "../../../images/logo-img.jpg"
+import logo from "../../../images/bistro_logo.svg"
 import { FaAlignRight } from "react-icons/fa"
 import styled from "styled-components"
 import { styles } from "../../../utils"
@@ -21,13 +21,12 @@ export default function NavbarHeader({ handleNavbar }) {
 }
 
 const HeaderWrapper = styled.div`
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding: 0.5rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   .logo {
-    height: 10rem;
+    height: 9rem;
   }
   .toggle-icon {
     font-size: 1.75rem;

@@ -29,7 +29,7 @@ export default class MainText extends Component {
 
 const IntroTextWrapper = styled.div`
   /* width: 90%; */
-  margin: 2rem auto;
+  margin: 0 auto;
   .text {
     line-height: 3rem;
     color: ${styles.colors.mainGrey};

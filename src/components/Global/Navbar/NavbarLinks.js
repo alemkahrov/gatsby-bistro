@@ -57,7 +57,7 @@ const LinkWrapper = styled.ul`
     display: block;
     text-decoration: none;
     padding: 1rem 1rem 1rem 1rem;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 400;
     text-transform: capitalize;
     cursor: pointer;
