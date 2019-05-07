@@ -49,7 +49,7 @@ const ItemWrapper = styled.div`
     opacity: 0.7;
     position: absolute;
     top: 2rem;
-    margin-top: 5rem;
+    margin-top: 5.2rem;
     z-index: 10;
   }
   .description {

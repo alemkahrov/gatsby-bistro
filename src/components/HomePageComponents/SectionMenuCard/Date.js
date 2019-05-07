@@ -16,4 +16,6 @@ const WochenDateWrapper = styled.div`
   font-size: 1.8rem;
   font-style: italic;
   color: ${styles.colors.mainGreen};
+      margin-bottom: -3rem;
+}
 `

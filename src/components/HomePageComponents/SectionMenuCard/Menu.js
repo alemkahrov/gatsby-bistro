@@ -27,9 +27,9 @@ export default function Menu() {
   return (
     <SectionColor>
       <Section>
-        <Title message="aktuell" title="unser wochenmenü" />
-        <MenuDate />
         <ItemList>
+          <Title message="aktuell" title="unser wochenmenü" />
+          <MenuDate />
           <StaticQuery
             query={ITEMS}
             render={data => {
@@ -48,7 +48,9 @@ export default function Menu() {
 const ItemList = styled.div`
 display: grid:
 grid-template-columns: 100%;
-
+background: #fff;
+padding: 2rem;
+box-shadow: 0 2rem 5rem rgba(#000, .1);
 
 @media (min-width: 992px) {
     width: 60vw;
