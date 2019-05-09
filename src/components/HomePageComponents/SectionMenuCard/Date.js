@@ -14,6 +14,7 @@ export default function Date({ dateItem }) {
 
 const WochenDateWrapper = styled.div`
   font-size: 1.8rem;
+  font-weight: 700;
   font-style: italic;
   color: ${styles.colors.mainGreen};
       margin-bottom: -3rem;

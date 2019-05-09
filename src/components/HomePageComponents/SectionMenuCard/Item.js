@@ -53,7 +53,7 @@ const ItemWrapper = styled.div`
     z-index: 10;
   }
   .description {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-top: 1rem;
     word-spacing: 0.2rem;
     text-transform: capitalize;

@@ -40,8 +40,8 @@ export default function Catering() {
             <SectionWrapper>
               <div className="text-wrapper">
                 <Title
-                  message="reservieren sie bei uns"
-                  title="ihre nächste Feier"
+                  message="einfach ihre nächste Feier"
+                  title="bei uns reservieren"
                 />
                 <p className="text">
                   Wir organisieren, für kleine Gruppen, die etwas andere Feier

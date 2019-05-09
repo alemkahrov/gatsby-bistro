@@ -3,7 +3,6 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Product from "./Product"
 import { Section, Title } from "../../../utils"
-import styled from "styled-components"
 
 const getProducts = graphql`
   {

@@ -23,7 +23,7 @@ export default class NavbarLinks extends Component {
       {
         id: 3,
         path: "/products/",
-        name: "unsere produkte",
+        name: "unser sortiment",
       },
       {
         id: 4,
