@@ -6,7 +6,7 @@ const BannerButton = styled.button`
   background: transparent;
   padding: 0.8rem 1.5rem 0.8rem 2rem;
   text-transform: uppercase;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   letter-spacing: 0.5rem;
   font-weight: 700;
   ${styles.border({ color: `${styles.colors.mainWhite}` })};
@@ -19,7 +19,7 @@ const BannerButton = styled.button`
   }
 
   @media (min-width: 576px) {
-    font-size: 2rem;
+    font-size: 2.2rem;
     padding: 1rem 1.5rem 1rem 2rem;
   }
 `

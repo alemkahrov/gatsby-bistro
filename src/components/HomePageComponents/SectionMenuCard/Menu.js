@@ -3,10 +3,10 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Item from "./Item"
 import MenuDate from "./MenuDate"
-import { Section, Title, SectionColor } from "../../../utils"
+import { Section, Title, BgColor } from "../../../utils"
 import styled from "styled-components"
 
-const ITEMS = graphql`
+/* const ITEMS = graphql`
   {
     items: allContentfulWochenmenu {
       edges {
@@ -21,16 +21,16 @@ const ITEMS = graphql`
       }
     }
   }
-`
+` */
 
 export default function Menu() {
   return (
-    <SectionColor>
+    <BgColor>
       <Section>
         <ItemList>
           <Title message="aktuell" title="unser wochenmenü" />
           <MenuDate />
-          <StaticQuery
+          {/* <StaticQuery
             query={ITEMS}
             render={data => {
               const items = data.items.edges
@@ -38,10 +38,10 @@ export default function Menu() {
                 return <Item key={item.node.id} item={item.node} />
               })
             }}
-          />
+          /> */}
         </ItemList>
       </Section>
-    </SectionColor>
+    </BgColor>
   )
 }
 
@@ -52,8 +52,9 @@ background: #fff;
 padding: 2rem;
 box-shadow: 0 2rem 5rem rgba(#000, .1);
 
+
 @media (min-width: 992px) {
-    width: 60vw;
+    width: 70vw;
     margin: 0 auto;
 }
 `

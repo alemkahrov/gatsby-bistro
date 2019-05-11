@@ -5,8 +5,3 @@ export const Section = styled.section`
   margin: 0 auto;
   color: #262626;
 `
-
-export const SectionColor = styled(Section)`
-  width: 100vw;
-  background: #e0e0e0;
-`

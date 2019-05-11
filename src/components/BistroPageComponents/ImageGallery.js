@@ -30,9 +30,9 @@ export default function ImageGallery() {
           <ImageGalleryWrapper>
             {images.map(({ node }, index) => {
               return (
-                <figure key={index} className={`item item-${index + 1}`}>
+                <div key={index} className={`item item-${index + 1}`}>
                   <Img fluid={node.childImageSharp.fluid} className="img" />
-                </figure>
+                </div>
               )
             })}
           </ImageGalleryWrapper>
@@ -43,13 +43,13 @@ export default function ImageGallery() {
 }
 
 const ImageGalleryWrapper = styled.div`
-  background: ${styles.colors.mainLightGrey2};
+  background: ${styles.colors.mainLightGrey};
   display: grid;
   /* grid-template-columns: auto; */
   grid-template: repeat(5, 9vw) / repeat(9, 1fr);
-  grid-column-gap: 1rem;
-  padding: 1.5rem;
-
+  grid-gap: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 4rem;
   .item-1 {
     grid-column: 8 / -1;
     grid-row: 1 / -1;

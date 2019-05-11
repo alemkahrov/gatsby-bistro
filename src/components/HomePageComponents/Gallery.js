@@ -64,7 +64,7 @@ export default function Gallery() {
               </div>
               <div className="text-wrapper">
                 <Title
-                  message="entdecke unser"
+                  message="entdecke unsere"
                   title="leidenschaft & phantasie"
                 />
                 <p className="text">
@@ -132,6 +132,9 @@ const GalleryWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-column-gap: 4rem;
+    .text {
+      font-size: 1.6rem;
+    }
   }
   .gatsby-image-wrapper {
     height: 100%;

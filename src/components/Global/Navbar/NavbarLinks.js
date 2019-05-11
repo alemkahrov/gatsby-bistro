@@ -13,7 +13,7 @@ export default class NavbarLinks extends Component {
       {
         id: 1,
         path: "/bistro/",
-        name: "unser bistro",
+        name: "bistro",
       },
       {
         id: 2,
@@ -23,7 +23,7 @@ export default class NavbarLinks extends Component {
       {
         id: 3,
         path: "/products/",
-        name: "unser sortiment",
+        name: "sortiment",
       },
       {
         id: 4,
@@ -70,7 +70,7 @@ const LinkWrapper = styled.ul`
     }
   }
   //
-  height: ${props => (props.open ? "205px" : "0px")};
+  height: ${props => (props.open ? "220px" : "0px")};
   overflow: hidden;
   ${styles.transObject({ time: "1s" })};
   //

@@ -24,9 +24,10 @@ const BannerWrapper = styled.div`
   /* margin-bottom: 3rem; */
   text-align: center;
   padding: 0 1rem;
+
   h1 {
     color: ${styles.colors.mainWhite};
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-transform: uppercase;
     ${styles.letterSpacing({ spacing: "0.3rem" })};
     margin-right: -0.3rem;
@@ -36,19 +37,23 @@ const BannerWrapper = styled.div`
     ${styles.textSlanted};
     ${styles.letterSpacing({ spacing: "0.15rem" })};
     margin-right: -0.15rem;
-    font-size: 1.7rem;
+    font-size: 2.2rem;
     text-transform: capitalize;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     h1 {
-      font-size: 3.5rem;
+      font-size: 4rem;
       ${styles.letterSpacing({ spacing: "0.5rem" })};
       margin-right: -0.5rem;
     }
     h3 {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
+  }
+  @media (min-width: 924px) {
+    width: 70%;
+    text-align: center;
   }
 `
 

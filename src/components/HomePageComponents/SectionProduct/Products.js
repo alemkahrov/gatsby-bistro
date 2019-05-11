@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Product from "./Product"
 import { Section, Title } from "../../../utils"
 
-const getProducts = graphql`
+/* const getProducts = graphql`
   {
     items: allContentfulProduktUbersicht {
       edges {
@@ -20,7 +20,7 @@ const getProducts = graphql`
       }
     }
   }
-`
+` */
 
 export default function Products() {
   return (
@@ -29,7 +29,7 @@ export default function Products() {
         message="feinste italienische spezialitäten"
         title="unsere produkte"
       />
-      <StaticQuery
+      {/* <StaticQuery
         query={getProducts}
         render={data => {
           const { edges: allProducts } = data.items
@@ -37,7 +37,7 @@ export default function Products() {
             return <Product key={item.node.id} product={item.node} />
           })
         }}
-      />
+      /> */}
     </Section>
   )
 }

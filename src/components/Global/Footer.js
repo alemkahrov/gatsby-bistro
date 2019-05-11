@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { styles, IntroText } from "../../utils"
 import { FaInstagram, FaFacebook } from "react-icons/fa"
 import logo from "../../images/bistro_logo_dunkel.svg"
+import FooterLinks from "./FooterLinks"
 export default class Footer extends Component {
   state = {
     icons: [
@@ -42,6 +43,7 @@ export default class Footer extends Component {
         <p className="copyright">
           copyright &copy; 2019 Developed by Alem Kahrovic
         </p>
+        <FooterLinks />
       </FooterWrapper>
     )
   }

@@ -23,21 +23,26 @@ const ProductWrapper = styled.div`
   grid-template-columns: auto;
   grid-gap: 1rem;
 
-  @media (min-width: 576px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: start;
-  }
   .title {
     font-family: ${styles.textSlanted};
     font-size: 1.8rem;
-    margin-top: 1rem;
+
+    color: ${styles.colors.mainGreen};
+    text-transform: uppercase;
   }
   .info {
     font-size: 1.3rem;
-    
-    }
   }
-  img {
+  @media (min-width: 576px) {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+
+    .title {
+      font-size: 2rem;
+      margin-top: 0.5rem;
+    }
+    .info {
+      font-size: 1.5rem;
+    }
   }
 `

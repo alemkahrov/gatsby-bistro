@@ -5,7 +5,7 @@ import Product from "./Product"
 import { Section, Title, IntroText } from "../../utils"
 import styled from "styled-components"
 
-const getProducts = graphql`
+/* const getProducts = graphql`
   {
     items: allContentfulSortiment {
       edges {
@@ -24,17 +24,17 @@ const getProducts = graphql`
       }
     }
   }
-`
+` */
 
 export default function Sortiment() {
   return (
     <Section>
       <IntroText
         title="unser sortiment"
-        text="feinste italienische spezialitäten"
+        text="Feinste Italienische Spezialitäten"
       />
       <ProductList>
-        <StaticQuery
+        {/* <StaticQuery
           query={getProducts}
           render={data => {
             const allProducts = data.items.edges
@@ -42,19 +42,23 @@ export default function Sortiment() {
               return <Product key={item.node.id} product={item.node} />
             })
           }}
-        />
+        /> */}
       </ProductList>
     </Section>
   )
 }
 
 export const ProductList = styled.div`
-  margin: 6rem 0;
+  margin: 2rem 0 0;
   display: grid;
   grid-template-columns: 100%;
-  grid-gap: 4rem;
+  grid-gap: 1.5rem;
 
-  @media (min-width: 776px) {
+  @media (min-width: 576px) {
+    margin: 4rem 0 2rem;
+    grid-gap: 3rem;
+  }
+  @media (min-width: 768px) {
     justify-content: center;
   }
   @media (min-width: 992px) {

@@ -34,38 +34,18 @@ const IndexPage = ({ data }) => (
       <Banner title="delizioso" subtitle="täglich frische Gerichte" />
     </PageHeader>
     <Gallery />
-    {/* <Speisekarte items={data.speisekarte} /> */}
     <PageHeader img={fillImg1}>
       <Banner
         title="italien daheim erleben"
         subtitle="original italienische spezialitäten zum mitnehmen "
-      />
+      >
+        <Link to="/products/" style={{ textDecoration: "none" }}>
+          <BannerButton style={{ margin: "4rem auto" }}>Sortiment</BannerButton>
+        </Link>
+      </Banner>
     </PageHeader>
     <Catering />
   </Layout>
 )
-
-/* export const query = graphql`
-  {
-    speisekarte: allContentfulSpeisekarte {
-      edges {
-        node {
-          id
-          title
-          info {
-            info
-          }
-          price
-          category
-          image {
-            fixed(width: 80, height: 80) {
-              ...GatsbyContentfulFixed_tracedSVG
-            }
-          }
-        }
-      }
-    }
-  }
-` */
 
 export default IndexPage

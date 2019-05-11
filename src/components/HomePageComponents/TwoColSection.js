@@ -68,5 +68,8 @@ const TwoColSectionWrapper = styled.div`
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 4rem;
+    .text {
+      font-size: 1.6rem;
+    }
   }
 `

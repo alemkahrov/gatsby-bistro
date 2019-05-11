@@ -5,7 +5,7 @@ import styled from "styled-components"
 import Product from "../MenuPageComponents/Product"
 import ImgNachspeisen from "./ImgNachspeisen"
 
-const PRODUCTS = graphql`
+/* const PRODUCTS = graphql`
   {
     items: allContentfulNachspeisen {
       edges {
@@ -20,7 +20,7 @@ const PRODUCTS = graphql`
       }
     }
   }
-`
+` */
 
 export default function Nachspeisen() {
   return (
@@ -28,7 +28,7 @@ export default function Nachspeisen() {
       <IntroText title="nachspeisen" text="dolci" />
       <ImgNachspeisen />
       <ProductList>
-        <StaticQuery
+        {/* <StaticQuery
           query={PRODUCTS}
           render={data => {
             const { edges: dolci } = data.items
@@ -36,14 +36,14 @@ export default function Nachspeisen() {
               return <Product key={item.node.id} products={item.node} />
             })
           }}
-        />
+        /> */}
       </ProductList>
     </Section>
   )
 }
 
 export const ProductList = styled.div`
-  margin: 3rem 0;
+  margin: 6rem 0 2rem;
   display: grid;
   grid-template-columns: 100%;
   grid-row-gap: 3rem;

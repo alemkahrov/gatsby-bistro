@@ -18,9 +18,10 @@ const IntroTextWrapper = styled.div`
   width: 90%;
   margin: auto;
   h1 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
+    ${styles.textSlanted};
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: capitalize;
     margin-right: -0.3rem;
     ${styles.letterSpacing({ spacing: "0.3rem" })};
     color: ${styles.colors.mainGreen};
@@ -41,14 +42,16 @@ const IntroTextWrapper = styled.div`
     word-spacing: 0.1rem;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     width: 70%;
     h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
     }
     p {
       font-size: 1.8rem;
     }
+  }
+  @media (min-width: 768px) {
   }
   @media (min-width: 992px) {
     width: 60%;

@@ -2,9 +2,10 @@ import * as styles from "./styles"
 import { HomeHeader, PageHeader, FillHeader } from "./Header"
 import { Banner, FillBanner } from "./Banner"
 import { BannerButton, SectionButton } from "./Button"
-import { Section, SectionColor } from "./Section"
+import { Section, SectionColor, SectionGreyMenuCard } from "./Section"
 import { Title } from "./Title"
 import { IntroText } from "./IntroText"
+import { BgColor } from "./BgColor"
 
 export {
   styles,
@@ -19,4 +20,6 @@ export {
   SectionColor,
   IntroText,
   FillBanner,
+  SectionGreyMenuCard,
+  BgColor,
 }

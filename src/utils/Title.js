@@ -24,6 +24,7 @@ const TitleWrapper = styled.div`
     margin-right: -0.3rem;
     font-size: 2rem;
     color: ${styles.colors.mainRed};
+    text-transform: capitalize;
   }
   h1 {
     ${styles.letterSpacing({ spacing: "0.3rem" })};

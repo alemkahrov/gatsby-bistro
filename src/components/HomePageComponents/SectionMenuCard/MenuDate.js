@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Date from "./Date"
 import styled from "styled-components"
 
-const DATE = graphql`
+/* const DATE = graphql`
   {
     date: allContentfulWochenmenuTitle {
       edges {
@@ -14,12 +14,12 @@ const DATE = graphql`
       }
     }
   }
-`
+` */
 
 export default function MenuDate() {
   return (
     <ItemList>
-      <StaticQuery
+      {/* <StaticQuery
         query={DATE}
         render={data => {
           const date = data.date.edges
@@ -27,7 +27,7 @@ export default function MenuDate() {
             return <Date key={item.node.id} dateItem={item.node} />
           })
         }}
-      />
+      /> */}
     </ItemList>
   )
 }
@@ -37,8 +37,4 @@ display: grid:
 grid-template-columns: 100%;
 padding-top: 2rem;
 
-@media (min-width: 992px) {
-    width: 60vw;
-    margin: 0 auto;
-}
 `
