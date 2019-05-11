@@ -6,9 +6,10 @@ import styled from "styled-components"
 
 /* const DATE = graphql`
   {
-    date: allContentfulWochenmenuTitle {
+    date: allContentfulWochenDatum {
       edges {
         node {
+          id
           title
         }
       }
