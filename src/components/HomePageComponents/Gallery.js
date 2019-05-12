@@ -10,28 +10,30 @@ export default function Gallery() {
     <StaticQuery
       query={graphql`
         {
-          img4: file(relativePath: { eq: "homeGallery/img-4.jpg" }) {
+          img4: file(relativePath: { eq: "homeGallery/vorspeise_platte.JPG" }) {
             childImageSharp {
               fluid(maxWidth: 500) {
                 ...GatsbyImageSharpFluid_tracedSVG
               }
             }
           }
-          img5: file(relativePath: { eq: "homeGallery/img-5.jpg" }) {
+          img5: file(relativePath: { eq: "homeGallery/ravioli2.JPG" }) {
             childImageSharp {
               fluid(maxWidth: 500) {
                 ...GatsbyImageSharpFluid_tracedSVG
               }
             }
           }
-          img6: file(relativePath: { eq: "homeGallery/img-6.jpg" }) {
+          img6: file(relativePath: { eq: "homeGallery/panini_pala.JPG" }) {
             childImageSharp {
               fluid(maxWidth: 500) {
                 ...GatsbyImageSharpFluid_tracedSVG
               }
             }
           }
-          img7: file(relativePath: { eq: "homeGallery/img-7.jpg" }) {
+          img7: file(
+            relativePath: { eq: "homeGallery/bruschette_teller.JPG" }
+          ) {
             childImageSharp {
               fluid(maxWidth: 500) {
                 ...GatsbyImageSharpFluid_tracedSVG
