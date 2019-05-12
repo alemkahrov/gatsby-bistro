@@ -4,13 +4,13 @@ import styled from "styled-components"
 import { styles } from "../../../utils"
 
 export default function Item({ item }) {
-  const { title, price, description } = item
+  const { title, price, info } = item
   return (
     <ItemWrapper>
       <div className="product-info">
         <h3 className="title">{title}</h3>
 
-        <p className="description">{description.description}</p>
+        <p className="info">{info.info}</p>
       </div>
 
       <h3 className="price">€{price.toFixed(2)}</h3>
@@ -52,7 +52,7 @@ const ItemWrapper = styled.div`
     margin-top: 5.2rem;
     z-index: 10;
   }
-  .description {
+  .info {
     font-size: 1.4rem;
     margin-top: 1rem;
     word-spacing: 0.2rem;

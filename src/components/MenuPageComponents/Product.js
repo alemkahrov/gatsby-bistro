@@ -2,8 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import { styles } from "../../utils"
 
-export default function Product({ products }) {
-  const { title, price, info } = products
+export default function Product({ product }) {
+  const { title, price, info } = product
   return (
     <ProductWrapper>
       <div className="product-info">

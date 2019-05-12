@@ -5,9 +5,9 @@ import Product from "./Product"
 import { Section, Title, IntroText } from "../../utils"
 import styled from "styled-components"
 
-/* const getProducts = graphql`
+const Products = graphql`
   {
-    items: allContentfulSortiment {
+    getItems: allContentfulSortiment {
       edges {
         node {
           id
@@ -24,7 +24,7 @@ import styled from "styled-components"
       }
     }
   }
-` */
+`
 
 export default function Sortiment() {
   return (
@@ -34,15 +34,15 @@ export default function Sortiment() {
         text="Feinste Italienische Spezialitäten"
       />
       <ProductList>
-        {/* <StaticQuery
-          query={getProducts}
+        <StaticQuery
+          query={Products}
           render={data => {
-            const allProducts = data.items.edges
+            const allProducts = data.getItems.edges
             return allProducts.map(item => {
               return <Product key={item.node.id} product={item.node} />
             })
           }}
-        /> */}
+        />
       </ProductList>
     </Section>
   )
@@ -61,10 +61,10 @@ export const ProductList = styled.div`
   @media (min-width: 768px) {
     justify-content: center;
   }
-  @media (min-width: 992px) {
+  @media (min-width: 1140px) {
     grid-template-columns: 1fr 1fr;
   }
-  .gatsby-image-wrapper {
+  /* .gatsby-image-wrapper {
     height: 100%;
-  }
+  } */
 `

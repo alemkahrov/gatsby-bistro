@@ -45,4 +45,9 @@ const ProductWrapper = styled.div`
       font-size: 1.5rem;
     }
   }
+  .img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 `

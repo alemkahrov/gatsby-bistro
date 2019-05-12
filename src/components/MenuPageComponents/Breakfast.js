@@ -5,9 +5,9 @@ import styled from "styled-components"
 import Product from "../MenuPageComponents/Product"
 import ImgBreakfast from "./ImgBreakfast"
 
-/* const PRODUCTS = graphql`
+const ITEMS = graphql`
   {
-    items: allContentfulFruhstuck {
+    getItems: allContentfulFruhstuckColazione {
       edges {
         node {
           id
@@ -20,7 +20,7 @@ import ImgBreakfast from "./ImgBreakfast"
       }
     }
   }
-` */
+`
 
 export default function Breakfast() {
   return (
@@ -29,15 +29,15 @@ export default function Breakfast() {
         <IntroText title="frühstück" text="colazione" />
         <ImgBreakfast />
         <ProductList>
-          {/* <StaticQuery
-            query={PRODUCTS}
+          <StaticQuery
+            query={ITEMS}
             render={data => {
-              const { edges: colazione } = data.items
+              const { edges: colazione } = data.getItems
               return colazione.map(item => {
-                return <Product key={item.node.id} products={item.node} />
+                return <Product key={item.node.id} product={item.node} />
               })
             }}
-          /> */}
+          />
         </ProductList>
       </Section>
     </BgColor>

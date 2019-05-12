@@ -5,9 +5,9 @@ import styled from "styled-components"
 import Product from "../MenuPageComponents/Product"
 import ImgSalate from "./ImgSalate"
 
-/* const PRODUCTS = graphql`
+const ITEMS = graphql`
   {
-    items: allContentfulSalate {
+    getItems: allContentfulSalateInsalate {
       edges {
         node {
           id
@@ -20,7 +20,7 @@ import ImgSalate from "./ImgSalate"
       }
     }
   }
-` */
+`
 
 export default function Salate() {
   return (
@@ -29,15 +29,15 @@ export default function Salate() {
         <IntroText title="Salate" text="insalate" />
         <ImgSalate />
         <ProductList>
-          {/* <StaticQuery
-            query={PRODUCTS}
+          <StaticQuery
+            query={ITEMS}
             render={data => {
-              const { edges: salate } = data.items
+              const { edges: salate } = data.getItems
               return salate.map(item => {
-                return <Product key={item.node.id} products={item.node} />
+                return <Product key={item.node.id} product={item.node} />
               })
             }}
-          /> */}
+          />
         </ProductList>
       </Section>
     </BgColor>

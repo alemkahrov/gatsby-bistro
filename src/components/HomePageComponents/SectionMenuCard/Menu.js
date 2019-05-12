@@ -6,22 +6,22 @@ import MenuDate from "./MenuDate"
 import { Section, Title, BgColor } from "../../../utils"
 import styled from "styled-components"
 
-/* const ITEMS = graphql`
+const ITEMS = graphql`
   {
-    items: allContentfulWochenmenu {
+    items: allContentfulWochenMenuKarte {
       edges {
         node {
           id
           title
           price
-          description {
-            description
+          info {
+            info
           }
         }
       }
     }
   }
-` */
+`
 
 export default function Menu() {
   return (
@@ -30,7 +30,7 @@ export default function Menu() {
         <ItemList>
           <Title message="aktuell" title="unser wochenmenü" />
           <MenuDate />
-          {/* <StaticQuery
+          <StaticQuery
             query={ITEMS}
             render={data => {
               const items = data.items.edges
@@ -38,7 +38,7 @@ export default function Menu() {
                 return <Item key={item.node.id} item={item.node} />
               })
             }}
-          /> */}
+          />
         </ItemList>
       </Section>
     </BgColor>
