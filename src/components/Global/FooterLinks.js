@@ -35,16 +35,15 @@ export default class FooterLinks extends Component {
 }
 
 const LinkWrapper = styled.ul`
-display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
   .nav-item {
     list-style-type: none;
-    
   }
   .nav-link {
     display: block;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 400;
     text-transform: capitalize;
     cursor: pointer;
@@ -53,7 +52,6 @@ display: flex;
     &:hover {
       color: ${styles.colors.mainWhite};
       text-decoration: underline;
-      
     }
   }
 `
