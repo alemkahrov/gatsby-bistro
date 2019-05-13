@@ -30,8 +30,8 @@ export default function Sortiment() {
   return (
     <Section>
       <IntroText
-        title="unser sortiment"
-        text="Feinste Italienische Spezialitäten"
+        title="Unser Sortiment"
+        text="Feinste italienische Spezialitäten"
       />
       <ProductList>
         <StaticQuery

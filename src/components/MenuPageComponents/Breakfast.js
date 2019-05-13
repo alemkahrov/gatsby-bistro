@@ -26,7 +26,7 @@ export default function Breakfast() {
   return (
     <BgColor>
       <Section>
-        <IntroText title="frühstück" text="colazione" />
+        <IntroText title="Frühstück" text="colazione" />
         <ImgBreakfast />
         <ProductList>
           <StaticQuery

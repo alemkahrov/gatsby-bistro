@@ -21,7 +21,6 @@ const IntroTextWrapper = styled.div`
     font-size: 2.5rem;
     ${styles.textSlanted};
     font-weight: 700;
-    text-transform: capitalize;
     margin-right: -0.3rem;
     ${styles.letterSpacing({ spacing: "0.3rem" })};
     color: ${styles.colors.mainGreen};

@@ -38,7 +38,6 @@ const BannerWrapper = styled.div`
     ${styles.letterSpacing({ spacing: "0.15rem" })};
     margin-right: -0.15rem;
     font-size: 2.2rem;
-    text-transform: capitalize;
   }
 
   @media (min-width: 576px) {

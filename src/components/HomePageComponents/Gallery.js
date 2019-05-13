@@ -66,12 +66,12 @@ export default function Gallery() {
               </div>
               <div className="text-wrapper">
                 <Title
-                  message="entdecke unsere"
+                  message="Entdecke unsere"
                   title="leidenschaft & phantasie"
                 />
                 <p className="text">
                   Bei uns bekommen Sie ausschließlich frische hausgemachte
-                  original Italienische Spezialitäten.
+                  Spezialitäten. Originial italienisch.
                 </p>
                 <Link to="/menu/" style={{ textDecoration: "none" }}>
                   <SectionButton style={{ margin: "2rem auto" }}>

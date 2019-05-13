@@ -11,7 +11,7 @@ const BistroPage = () => {
     <Layout>
       <SEO title="Italienisches Bistro - L'angolo di michel" />
       <PageHeader img={img}>
-        <Banner title="bistro - l'angolo di michel" subtitle="unsere mission" />
+        <Banner title="bistro - l'angolo di michel" subtitle="Unsere Mission" />
       </PageHeader>
       <MainText />
       <ImageGallery />

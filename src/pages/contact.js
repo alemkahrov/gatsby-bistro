@@ -12,7 +12,7 @@ const ContactPage = () => {
       <PageHeader img={img}>
         <Banner
           title="haben wir ihr interesse geweckt?"
-          subtitle="schreiben sie uns einfach"
+          subtitle="Schreiben Sie uns einfach"
         />
       </PageHeader>
       <Contact />

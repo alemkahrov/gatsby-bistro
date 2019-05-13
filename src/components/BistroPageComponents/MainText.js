@@ -7,15 +7,14 @@ export default class MainText extends Component {
   render() {
     return (
       <Section>
-        <IntroText title="wie alles begann..." />
+        <IntroText title="Wie alles begann..." />
         <IntroTextWrapper>
           <p className="text">
-            In dieser Ecke in Italien, der{" "}
-            <span className="f-weight">Como See</span> hab ich vor ein paar
-            Jahren Italien aus einer ganz anderen Perspektive kennengelernt.
-            Durch mehrere Reisen begleitet von einer echten Italienerin ist die
-            Idee geboren, diese Liebe und Leidenschaft für Italien nach Wien in
-            den 8ten Bezirk zu bringen.
+            Der <span className="f-weight">Como See,</span> diese Ecke von
+            Italien habe ich vor ein paar Jahren aus einer ganz anderen
+            Perspektive kennengelernt. Durch mehrere Reisen begleitet von einer
+            echten Italienerin ist die Idee geboren, diese Liebe und
+            Leidenschaft für Italien nach Wien in den 8ten Bezirk zu bringen.
           </p>
           <p className="text center">
             So ist heute <span className="f-weight">L' Angolo di Michel</span>{" "}
@@ -33,6 +32,7 @@ const IntroTextWrapper = styled.div`
   .text {
     line-height: 3rem;
     color: ${styles.colors.mainGrey};
+
     word-spacing: 0.1rem;
     font-size: 1.4rem;
     .f-weight {

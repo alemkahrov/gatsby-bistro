@@ -19,7 +19,7 @@ const IndexPage = ({ data }) => (
       <Banner
         title="  
          l'angolo di michel"
-        subtitle="fuhrmannsgasse 1 - 1080 wien"
+        subtitle="Fuhrmannsgasse 1 - 1080 wien"
       >
         <Link to="/menu/" style={{ textDecoration: "none" }}>
           <BannerButton style={{ margin: "4rem auto" }}>
@@ -31,13 +31,13 @@ const IndexPage = ({ data }) => (
     <Menu />
     <TwoColSection />
     <PageHeader img={fillImg}>
-      <Banner title="delizioso" subtitle="täglich frische Gerichte" />
+      <Banner title="delizioso" subtitle="Täglich frische Gerichte" />
     </PageHeader>
     <Gallery />
     <PageHeader img={fillImg1}>
       <Banner
         title="italien daheim erleben"
-        subtitle="original italienische spezialitäten zum mitnehmen "
+        subtitle="Original italienische Spezialitäten zum mitnehmen "
       >
         <Link to="/products/" style={{ textDecoration: "none" }}>
           <BannerButton style={{ margin: "4rem auto" }}>Sortiment</BannerButton>

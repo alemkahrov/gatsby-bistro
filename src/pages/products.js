@@ -12,7 +12,7 @@ export default function products() {
       <PageHeader img={img}>
         <Banner
           title="original italienische spezialitäten"
-          subtitle="bei l'angolo di michel in 1080 wien erhältlich"
+          subtitle="Bei l'angolo di Michel in 1080 Wien erhältlich"
         />
       </PageHeader>
       <Sortiment />

@@ -16,7 +16,7 @@ const MenuPage = () => (
     <PageHeader img={img}>
       <Banner
         title="speisekarte"
-        subtitle="italienische speziallitäten täglich frisch bei uns"
+        subtitle="Italienische Speziallitäten täglich frisch bei uns"
       />
     </PageHeader>
     <Breakfast />

@@ -25,8 +25,9 @@ export default class Footer extends Component {
         <img src={logo} className="logo" alt="company logo" />
         <h5 className="location">
           Fuhrmannsgasse 1 - 1080 Wien <br />
-          Tel.: +43676/46 144 18 <br />
-          E-mail: langolodimichel@hotmail.com
+          Mobil: +43676/46 144 18 <br />
+          Tel.: 01/4023694 <br />
+          E-mail: michel@langolo.at
         </h5>
         <div className="icons">
           {this.state.icons.map(item => (

@@ -33,7 +33,7 @@ const HeaderWrapper = styled.div`
     color: ${styles.colors.mainGreen};
     cursor: pointer;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 807px) {
     .toggle-icon {
       display: none;
     }

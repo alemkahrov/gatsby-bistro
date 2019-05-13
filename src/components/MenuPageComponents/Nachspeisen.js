@@ -25,7 +25,7 @@ const ITEMS = graphql`
 export default function Nachspeisen() {
   return (
     <Section>
-      <IntroText title="nachspeisen" text="dolci" />
+      <IntroText title="Nachspeisen" text="dolci" />
       <ImgNachspeisen />
       <ProductList>
         <StaticQuery

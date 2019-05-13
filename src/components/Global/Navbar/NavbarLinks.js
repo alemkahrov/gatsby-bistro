@@ -56,8 +56,8 @@ const LinkWrapper = styled.ul`
   .nav-link {
     display: block;
     text-decoration: none;
-    padding: 1rem 1rem 1rem 1rem;
-    font-size: 1.5rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    font-size: 1.6rem;
     font-weight: 400;
     text-transform: capitalize;
     cursor: pointer;
@@ -75,7 +75,7 @@ const LinkWrapper = styled.ul`
   ${styles.transObject({ time: "1s" })};
   //
 
-  @media (min-width: 768px) {
+  @media (min-width: 807px) {
     //
     height: auto;
     //
@@ -88,7 +88,7 @@ const LinkWrapper = styled.ul`
       &:hover,
       &:focus {
         background: ${styles.colors.mainWhite};
-        padding: 1rem 1rem 1rem 1rem;
+        padding: 1rem 1.5rem 1rem 1.5rem;
         /* border-color: ${styles.colors.mainRed}; */
         color: ${styles.colors.mainRed};
       }

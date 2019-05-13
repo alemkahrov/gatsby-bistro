@@ -60,7 +60,7 @@ const IconWrapper = styled.div`
     color: ${styles.colors.mainGreen};
   }
   display: none;
-  @media (min-width: 768px) {
+  @media (min-width: 807px) {
     display: flex;
     justify-content: space-around;
   }

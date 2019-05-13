@@ -28,7 +28,7 @@ export default function Menu() {
     <BgColor>
       <Section>
         <ItemList>
-          <Title message="aktuell" title="unser wochenmenü" />
+          <Title message="Aktuell" title="unser wochenmenü" />
           <MenuDate />
           <StaticQuery
             query={ITEMS}

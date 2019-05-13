@@ -29,11 +29,11 @@ export default function TwoColSection() {
           <Section>
             <TwoColSectionWrapper>
               <div className="text-wrapper">
-                <Title message="wir lieben italien" title="unsere mission" />
+                <Title message="Wir lieben Italien" title="unsere mission" />
                 <p className="text">
-                  Wir versprechen frische und qualitative Produkte. Das „Eck“ im
-                  8ten mit Charme Liebe und Leidenschaft für Italienische
-                  Spezialitäten.
+                  Wir versprechen frische Qualitätsprodukte. Das „Eck“ im achten
+                  Gemeindebezirk wirbt mit Charme, Liebe und der Leidenschaft
+                  für italienische Spezialitäten.
                 </p>
                 <Link to="/bistro/" style={{ textDecoration: "none" }}>
                   <SectionButton style={{ margin: "2rem auto" }}>
