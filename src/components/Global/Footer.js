@@ -44,11 +44,11 @@ export default class Footer extends Component {
               <div className="opening-wrapper">
                 <div className="opening-1">
                   <p className="day">Montag - Freitag</p>
-                  <p className="time">09:00 - 21:30</p>
+                  <p className="time">09:30 - 21:30</p>
                 </div>
                 <div className="opening-2">
                   <p className="day">Samstag </p>
-                  <p className="time">10:00 - 18:00</p>
+                  <p className="time">09:00 - 18:00</p>
                 </div>
               </div>
             </div>

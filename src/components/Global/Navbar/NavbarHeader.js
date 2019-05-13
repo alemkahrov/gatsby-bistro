@@ -29,7 +29,7 @@ const HeaderWrapper = styled.div`
     height: 9rem;
   }
   .toggle-icon {
-    font-size: 1.75rem;
+    font-size: 2rem;
     color: ${styles.colors.mainGreen};
     cursor: pointer;
   }
