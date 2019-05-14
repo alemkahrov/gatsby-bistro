@@ -12,12 +12,15 @@ function FillHeader({ img, children }) {
 }
 
 const IndexHeader = styled.header`
-  min-height: calc(100vh - 68px);
+  min-height: calc(80vh - 68px);
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(${props => props.img}) bottom/cover fixed no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (min-width: 576px) {
+    min-height: calc(100vh - 68px);
+  }
 `
 const DefaultHeader = styled(IndexHeader)`
   min-height: 60vh;
