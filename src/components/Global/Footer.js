@@ -35,6 +35,18 @@ export default class Footer extends Component {
                   <p>E-mail: michel@langolo.at</p>
                 </div>
               </div>
+              <div className="icons">
+                {this.state.icons.map(item => (
+                  <a
+                    href={item.path}
+                    key={item.id}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {item.icon}
+                  </a>
+                ))}
+              </div>
             </div>
 
             <div className="col-lg-4 col-md-6 col-sm-12">
@@ -56,18 +68,6 @@ export default class Footer extends Component {
               <img src={logo} className="logo" alt="company logo" />
               <FooterLinks />
             </div>
-          </div>
-          <div className="icons">
-            {this.state.icons.map(item => (
-              <a
-                href={item.path}
-                key={item.id}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {item.icon}
-              </a>
-            ))}
           </div>
         </Section>
         <div className="footer-bottom">

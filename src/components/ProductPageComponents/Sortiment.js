@@ -7,7 +7,7 @@ import styled from "styled-components"
 
 const Products = graphql`
   {
-    getItems: allContentfulSortiment {
+    getItems: allContentfulSortimentNeu {
       edges {
         node {
           id
