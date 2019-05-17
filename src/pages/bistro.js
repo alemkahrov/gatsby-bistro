@@ -5,6 +5,7 @@ import { PageHeader, Banner } from "../utils"
 import img from "../images/bcg/aboutBcg.jpeg"
 import MainText from "../components/BistroPageComponents/MainText"
 import ImageGallery from "../components/BistroPageComponents/ImageGallery"
+import ImageGallery1 from "../components/BistroPageComponents/ImageGallery1"
 
 const BistroPage = () => {
   return (
@@ -14,7 +15,8 @@ const BistroPage = () => {
         <Banner title="bistro - l'angolo di michel" subtitle="Unsere Mission" />
       </PageHeader>
       <MainText />
-      <ImageGallery />
+
+      <ImageGallery1 />
     </Layout>
   )
 }

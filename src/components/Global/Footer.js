@@ -105,6 +105,9 @@ const FooterWrapper = styled.footer`
     display: flex;
     justify-content: space-between;
     margin: auto;
+    
+    
+    
     @media(min-width: 768px) {
       margin-top: 0;
     }
@@ -113,6 +116,8 @@ const FooterWrapper = styled.footer`
     color: ${styles.colors.mainWhite};
     font-size: 1.8rem;
     ${styles.transition({})};
+    
+   
     &:hover {
       color: ${styles.colors.mainGreen};
     }

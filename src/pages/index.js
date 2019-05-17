@@ -26,6 +26,7 @@ const IndexPage = ({ data }) => (
             Speisekarte
           </BannerButton>
         </Link>
+        
       </Banner>
     </HomeHeader>
     <Menu />
