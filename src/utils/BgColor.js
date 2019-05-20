@@ -2,5 +2,5 @@ import styled from "styled-components"
 
 export const BgColor = styled.section`
   width: 100vw;
-  background: #e0e0e0;
+  background: rgba(238, 238, 238, 1);
 `
