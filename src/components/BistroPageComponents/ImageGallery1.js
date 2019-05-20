@@ -1,8 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
 import { StaticQuery, graphql } from "gatsby"
-import { styles, Section, Title, SectionButton } from "../../utils"
+import { styles } from "../../utils"
 import Img from "gatsby-image"
 
 export default function ImageGallery1() {

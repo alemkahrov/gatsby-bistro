@@ -15,7 +15,6 @@ const BistroPage = () => {
         <Banner title="bistro - l'angolo di michel" subtitle="Unsere Mission" />
       </PageHeader>
       <MainText />
-
       <ImageGallery1 />
     </Layout>
   )
