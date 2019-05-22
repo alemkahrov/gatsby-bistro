@@ -10,12 +10,12 @@ export default class Footer extends Component {
       {
         id: 1,
         icon: <FaFacebook className="icon facebook-icon" />,
-        path: `https://www.facebook.com`,
+        path: `https://www.facebook.com/Langolo-di-Michel-575753366165031/`,
       },
       {
         id: 2,
         icon: <FaInstagram className="icon instagram-icon" />,
-        path: `https://www.instagram.com`,
+        path: `https://www.instagram.com/langolodimichel/?hl=de`,
       },
     ],
   }
@@ -114,7 +114,7 @@ const FooterWrapper = styled.footer`
   }
   .icon {
     color: ${styles.colors.mainWhite};
-    font-size: 1.8rem;
+    font-size: 2rem;
     ${styles.transition({})};
     
    
