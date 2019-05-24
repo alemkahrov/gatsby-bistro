@@ -6,7 +6,7 @@ import styled from "styled-components"
 
 const DATE = graphql`
   {
-    date: allContentfulWochenDatum {
+    DateQuery: allContentfulWochenDatum {
       edges {
         node {
           id
@@ -23,7 +23,7 @@ export default function MenuDate() {
       <StaticQuery
         query={DATE}
         render={data => {
-          const date = data.date.edges
+          const date = data.DateQuery.edges
           return date.map(item => {
             return <Date key={item.node.id} dateItem={item.node} />
           })

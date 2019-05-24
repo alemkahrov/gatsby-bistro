@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { PageHeader, Banner, Title, Section } from "../utils"
+import { PageHeader, Banner } from "../utils"
 import img from "../images/bcg/menuBcg.jpeg"
 import Sortiment from "../components/ProductPageComponents/Sortiment"
 

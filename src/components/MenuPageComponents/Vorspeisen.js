@@ -7,7 +7,7 @@ import ImgVorspeisen from "./ImgVorspeisen"
 
 const ITEMS = graphql`
   {
-    getItems: allContentfulVorspeisenAntipasti {
+    AntipastiQuery: allContentfulAntipasti {
       edges {
         node {
           id
@@ -31,7 +31,7 @@ export default function Vorspeisen() {
         <StaticQuery
           query={ITEMS}
           render={data => {
-            const { edges: antipasti } = data.getItems
+            const { edges: antipasti } = data.AntipastiQuery
             return antipasti.map(item => {
               return <Product key={item.node.id} product={item.node} />
             })

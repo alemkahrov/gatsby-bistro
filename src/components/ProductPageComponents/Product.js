@@ -5,14 +5,16 @@ import Img from "gatsby-image"
 import { styles } from "../../utils"
 
 export default function Product({ product }) {
-  const { title, info } = product
-  const { fluid } = product.image
+  let { title, info } = product
+  let { fluid } = product.image
+
+  info = info ? info.info : ""
   return (
     <ProductWrapper>
       <Img fluid={fluid} className="img" />
       <div className="content-box">
         <h3 className="title">{title}</h3>
-        <p className="info">{info.info}</p>
+        <p className="info">{info}</p>
       </div>
     </ProductWrapper>
   )

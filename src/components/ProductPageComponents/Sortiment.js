@@ -2,12 +2,12 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 
 import Product from "./Product"
-import { Section, Title, IntroText } from "../../utils"
+import { Section, IntroText } from "../../utils"
 import styled from "styled-components"
 
 const Products = graphql`
   {
-    getItems: allContentfulSortimentNeu {
+    SortimentQuery: allContentfulSortiment {
       edges {
         node {
           id
@@ -17,6 +17,7 @@ const Products = graphql`
           }
           image {
             fluid(maxWidth: 500, maxHeight: 350) {
+              src
               ...GatsbyContentfulFluid_tracedSVG
             }
           }
@@ -37,7 +38,7 @@ export default function Sortiment() {
         <StaticQuery
           query={Products}
           render={data => {
-            const allProducts = data.getItems.edges
+            const allProducts = data.SortimentQuery.edges
             return allProducts.map(item => {
               return <Product key={item.node.id} product={item.node} />
             })

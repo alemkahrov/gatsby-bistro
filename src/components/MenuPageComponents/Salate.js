@@ -7,7 +7,7 @@ import ImgSalate from "./ImgSalate"
 
 const ITEMS = graphql`
   {
-    getItems: allContentfulSalateInsalate {
+    InsalateQuery: allContentfulInsalate {
       edges {
         node {
           id
@@ -32,7 +32,7 @@ export default function Salate() {
           <StaticQuery
             query={ITEMS}
             render={data => {
-              const { edges: salate } = data.getItems
+              const { edges: salate } = data.InsalateQuery
               return salate.map(item => {
                 return <Product key={item.node.id} product={item.node} />
               })

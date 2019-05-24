@@ -8,7 +8,7 @@ import styled from "styled-components"
 
 const ITEMS = graphql`
   {
-    items: allContentfulWochenMenuKarte {
+    MenuCardQuery: allContentfulWochenMenuKarte {
       edges {
         node {
           id
@@ -33,7 +33,7 @@ export default function Menu() {
           <StaticQuery
             query={ITEMS}
             render={data => {
-              const items = data.items.edges
+              const items = data.MenuCardQuery.edges
               return items.map(item => {
                 return <Item key={item.node.id} item={item.node} />
               })

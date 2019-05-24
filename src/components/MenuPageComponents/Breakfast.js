@@ -7,7 +7,7 @@ import ImgBreakfast from "./ImgBreakfast"
 
 const ITEMS = graphql`
   {
-    getItems: allContentfulFruhstuckColazione {
+    ColazioneQuery: allContentfulColazione {
       edges {
         node {
           id
@@ -32,7 +32,7 @@ export default function Breakfast() {
           <StaticQuery
             query={ITEMS}
             render={data => {
-              const { edges: colazione } = data.getItems
+              const { edges: colazione } = data.ColazioneQuery
               return colazione.map(item => {
                 return <Product key={item.node.id} product={item.node} />
               })

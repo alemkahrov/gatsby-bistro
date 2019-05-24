@@ -3,13 +3,19 @@ import styled from "styled-components"
 import { styles } from "../../utils"
 
 export default function Product({ product }) {
-  const { title, price, info } = product
+  let { title, price, info } = product
+
+  // set price
+  price = price ? price : 0
+
+  // set info
+  info = info ? info.info : ""
   return (
     <ProductWrapper>
       <div className="product-info">
         <h3 className="title">{title}</h3>
 
-        <p className="info">{info.info}</p>
+        <p className="info">{info}</p>
       </div>
 
       <h3 className="price">€{price.toFixed(2)}</h3>

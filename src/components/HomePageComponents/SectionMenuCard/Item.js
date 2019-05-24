@@ -4,13 +4,20 @@ import styled from "styled-components"
 import { styles } from "../../../utils"
 
 export default function Item({ item }) {
-  const { title, price, info } = item
+  let { title, price, info } = item
+
+  // set price
+  price = price ? price : 0
+
+  // set info
+  info = info ? info.info : ""
+
   return (
     <ItemWrapper>
       <div className="product-info">
         <h3 className="title">{title}</h3>
 
-        <p className="info">{info.info}</p>
+        <p className="info">{info}</p>
       </div>
 
       <h3 className="price">€{price.toFixed(2)}</h3>
@@ -56,7 +63,6 @@ const ItemWrapper = styled.div`
     font-size: 1.4rem;
     margin-top: 1rem;
     word-spacing: 0.2rem;
-    text-transform: capitalize;
     opacity: 0.8;
     font-weight: 200;
     flex-wrap: wrap;

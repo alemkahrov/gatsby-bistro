@@ -1,21 +1,18 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import { IntroText, Section, SectionCenter, styles } from "../../utils"
+import { IntroText, Section } from "../../utils"
 import styled from "styled-components"
 import Product from "../MenuPageComponents/Product"
 import ImgNachspeisen from "./ImgNachspeisen"
 
 const ITEMS = graphql`
   {
-    getItems: allContentfulNachspeisenDolci {
+    DolciQuery: allContentfulDolci {
       edges {
         node {
           id
           title
           price
-          info {
-            info
-          }
         }
       }
     }
@@ -31,7 +28,7 @@ export default function Nachspeisen() {
         <StaticQuery
           query={ITEMS}
           render={data => {
-            const { edges: dolci } = data.getItems
+            const { edges: dolci } = data.DolciQuery
             return dolci.map(item => {
               return <Product key={item.node.id} product={item.node} />
             })
