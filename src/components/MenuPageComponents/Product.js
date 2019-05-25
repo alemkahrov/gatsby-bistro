@@ -67,8 +67,7 @@ export const ProductWrapper = styled.div`
     font-size: 1.3rem;
     margin-top: 1.5rem;
     word-spacing: 0.2rem;
-    text-transform: capitalize;
-    opacity: 0.8;
+    opacity: 0.9;
     font-weight: 200;
   }
   /* @media (min-width: 650px) {
