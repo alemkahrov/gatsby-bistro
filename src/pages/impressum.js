@@ -31,7 +31,6 @@ const ImpressumPage = () => (
           <span>E-Mail:</span> michel@langolo.at <br />
         </p>
         <p>
-          <span>Berufsbezeichnung:</span> Inhaber von L'angolo di Michel <br />
           <span>Verleihungsstaat:</span> Österreich <br />
         </p>
         <p>
