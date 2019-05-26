@@ -18,11 +18,11 @@ const ImpressumPage = () => (
         </p>
         <p>
           L'angolo di Michel <br />
-          Michel Borkovic
+          Inhaber: Michel Borkovic
           <br />
-          Pretschgogasse 16, 1/1
+          Fuhrmannsgasse 1
           <br />
-          1170 Wien,
+          1080 Wien,
           <br />
           Österreich <br />
         </p>
