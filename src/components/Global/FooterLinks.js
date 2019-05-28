@@ -51,7 +51,7 @@ const LinkWrapper = styled.ul`
     ${styles.transDefault};
     &:hover {
       color: ${styles.colors.mainWhite};
-      text-decoration: underline;
+      /* text-decoration: underline; */
     }
   }
 `

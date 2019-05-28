@@ -32,7 +32,13 @@ export default class Footer extends Component {
                   <p className="location">Fuhrmannsgasse 1 - 1080 Wien</p>
                   <p>Mobil: +43 676/46 144 18</p>
 
-                  <p>E-mail: michel@langolo.at</p>
+                  <p>
+                    E-mail:
+                    <a href="mailto:michel@langolo.at" className="email-link">
+                      {" "}
+                      michel@langolo.at
+                    </a>
+                  </p>
                 </div>
               </div>
               <div className="icons">
@@ -87,6 +93,15 @@ const FooterWrapper = styled.footer`
   @media(min-width: 768px) {
     padding: 2rem 0 0 0;
   }
+  .email-link {
+    color: ${styles.colors.mainLightGrey2};
+    ${styles.transDefault};
+    text-decoration: none;
+    &:hover {
+      color: ${styles.colors.mainRed};
+
+    }
+  }
   p {
     color: #ccc;
     line-height: 1;
@@ -115,9 +130,7 @@ const FooterWrapper = styled.footer`
   .icon {
     color: ${styles.colors.mainWhite};
     font-size: 2rem;
-    ${styles.transition({})};
-    
-   
+    ${styles.transDefault};
     &:hover {
       color: ${styles.colors.mainGreen};
     }
