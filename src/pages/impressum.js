@@ -31,6 +31,9 @@ const ImpressumPage = () => (
           <span>E-Mail:</span> michel@langolo.at <br />
         </p>
         <p>
+          <span>UID Nummer:</span> ATU74374606 <br />
+        </p>
+        <p>
           <span>Verleihungsstaat:</span> Österreich <br />
         </p>
         <p>
