@@ -50,7 +50,7 @@ display: grid:
 grid-template-columns: 100%;
 background: #fff;
 padding: 2rem;
-box-shadow: 0 2rem 5rem rgba(#000, .1);
+box-shadow: 0 2rem 4rem rgba(0,0,0,0.15);
 
 
 @media (min-width: 992px) {

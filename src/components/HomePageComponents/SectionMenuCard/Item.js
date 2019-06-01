@@ -30,7 +30,7 @@ const ItemWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   position: relative;
-  margin: 6rem 0;
+  margin: 4rem 0;
 
   .title {
     margin: 0;
@@ -51,20 +51,19 @@ const ItemWrapper = styled.div`
 
   .border {
     width: 100%;
-    height: 2px;
     border-bottom: dotted 2px ${styles.colors.mainGrey} !important;
     opacity: 0.7;
     position: absolute;
     top: 2rem;
-    margin-top: 5.2rem;
+    margin-top: 0.8rem;
     z-index: 10;
   }
   .info {
     font-size: 1.4rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     word-spacing: 0.2rem;
     opacity: 0.8;
     font-weight: 200;
-    flex-wrap: wrap;
+    min-height: 2rem;
   }
 `
