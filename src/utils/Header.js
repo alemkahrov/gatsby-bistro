@@ -14,7 +14,7 @@ function FillHeader({ img, children }) {
 const IndexHeader = styled.header`
   min-height: calc(80vh - 68px);
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(${props => props.img}) bottom/cover fixed no-repeat;
+    url(${props => props.img}) bottom/cover scroll no-repeat;
   -o-background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
