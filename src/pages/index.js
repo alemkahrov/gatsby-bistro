@@ -3,7 +3,13 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { HomeHeader, Banner, BannerButton, PageHeader } from "../utils"
+import {
+  HomeHeader,
+  Banner,
+  BannerButton,
+  PageHeader,
+  NavbarButton,
+} from "../utils"
 import img from "../images/bcg/homeBcg.png"
 import fillImg from "../images/homeGallery/fill-img-1.jpg"
 import fillImg1 from "../images/homeGallery/fill-img-2.jpg"
@@ -21,11 +27,24 @@ const IndexPage = ({ data }) => (
          l'angolo di michel"
         subtitle="Fuhrmannsgasse 1 - 1080 wien"
       >
-        <Link to="/menu/" style={{ textDecoration: "none" }}>
-          <BannerButton style={{ margin: "4rem auto" }}>
-            Speisekarte
-          </BannerButton>
-        </Link>
+        <div className="button-box">
+          <Link
+            to="/menu/"
+            style={{ textDecoration: "none" }}
+            className="btn-1"
+          >
+            <BannerButton>Speisekarte</BannerButton>
+          </Link>
+          <a
+            href="https://booking-widget.quandoo.de/iframe.html?agentId=2&merchantId=55189&origin=https%3A%2F%2Fadmin.quandoo.com&path=https%3A%2F%2Fbooking-widget.quandoo.com%2F&theme=brand"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+            className="btn-2"
+          >
+            <NavbarButton>reservieren</NavbarButton>
+          </a>
+        </div>
       </Banner>
     </HomeHeader>
     <Menu />

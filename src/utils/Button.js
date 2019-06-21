@@ -34,4 +34,16 @@ const SectionButton = styled(BannerButton)`
   }
 `
 
-export { BannerButton, SectionButton }
+const NavbarButton = styled(BannerButton)`
+  color: ${styles.colors.mainRed};
+  ${styles.border({ color: `${styles.colors.mainWhite}` })};
+  ${styles.transition({})};
+  &:hover {
+    background: ${styles.colors.mainBlack};
+    color: ${styles.colors.mainRed};
+    ${styles.border({ color: `${styles.colors.mainBlack}` })};
+    cursor: pointer;
+  }
+`
+
+export { BannerButton, SectionButton, NavbarButton }

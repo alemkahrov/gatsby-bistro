@@ -26,7 +26,7 @@ const IndexHeader = styled.header`
   }
 `
 const DefaultHeader = styled(IndexHeader)`
-  min-height: 60vh;
+  min-height: 50vh;
 `
 
 const CtaHeader = styled(IndexHeader)`
