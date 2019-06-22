@@ -11,6 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 2rem auto 0 auto;
+  align-items: center;
 }
 .btn-2 {
   margin-top: 1rem;
@@ -20,6 +21,7 @@ body {
   .button-box {
     flex-direction: row;
     margin: 4rem auto;
+    justify-content: center;
   }
   .btn-2 {
     margin: 0 0 0 2rem;

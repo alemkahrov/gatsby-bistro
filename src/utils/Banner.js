@@ -24,8 +24,6 @@ const BannerWrapper = styled.div`
   /* margin-bottom: 3rem; */
   text-align: center;
   padding: 0 1rem;
-  display: flex;
-  flex-direction: column;
 
   h1 {
     color: ${styles.colors.mainWhite};
