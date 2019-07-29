@@ -34,4 +34,16 @@ const SectionButton = styled(BannerButton)`
   }
 `
 
-export { BannerButton, SectionButton }
+const BookingButton = styled(BannerButton)`
+  color: ${styles.colors.mainWhite};
+  background: ${styles.colors.mainGreen};
+  ${styles.border({ color: `${styles.colors.transparent}` })};
+  ${styles.transition({})};
+  &:hover {
+    background: ${styles.colors.mainDarkGreen};
+    color: ${styles.colors.mainWhite};
+    cursor: pointer;
+  }
+`
+
+export { BannerButton, SectionButton, BookingButton }

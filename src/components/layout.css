@@ -1,8 +1,29 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
   font-family: 'Caveat', cursive;
+} */
+
+.button-box {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto 0 auto;
+  align-items: center;
+}
+.btn-2 {
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .button-box {
+    flex-direction: row;
+    margin: 4rem auto;
+    justify-content: center;
+  }
+  .btn-2 {
+    margin: 0 0 0 2rem;
+  }
 }

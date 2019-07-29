@@ -6,6 +6,7 @@ import Navbar from "../components/Global/Navbar"
 import Footer from "../components/Global/Footer"
 import "./bootstrap.min.css"
 // import '../styles/sass/layout.scss'
+import "../components/layout.css"
 
 const Layout = ({ children }) => (
   <div>

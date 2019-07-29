@@ -4,10 +4,12 @@ export const colors = {
   mainYellow: `#d2aa5c`,
   mainYellow2: `#F2AF29`,
   mainGreen: "#156342",
+  mainDarkGreen: `#13593b`,
   mainRed: "#D65540",
   mainGrey: `#474747`,
   mainLightGrey: `#f9f7f6`,
   mainLightGrey2: "#e0e0e0",
+  transparent: `transparent`,
 }
 export const textSlanted = `font-family:'Caveat', cursive;`
 
