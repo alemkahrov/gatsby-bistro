@@ -4,7 +4,11 @@
   box-sizing: border-box;
 }
 body {
+<<<<<<< HEAD
   font-family: 'Caveat', cursive;
+=======
+  font-family: "Caveat", cursive;
+>>>>>>> 70105d23917dd45f8dd98599d138261584bd5d95
 } */
 
 .button-box {

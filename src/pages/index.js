@@ -3,7 +3,13 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { HomeHeader, Banner, BannerButton, BookingButton, PageHeader } from "../utils"
+import {
+  HomeHeader,
+  Banner,
+  BannerButton,
+  PageHeader,
+  BookingButton,
+} from "../utils"
 import img from "../images/bcg/homeBcg.png"
 import fillImg from "../images/homeGallery/fill-img-1.jpg"
 import fillImg1 from "../images/homeGallery/fill-img-2.jpg"
